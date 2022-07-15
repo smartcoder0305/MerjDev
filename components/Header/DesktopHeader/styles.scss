@@ -1,0 +1,352 @@
+@import '../../../static/styles/variables.scss';
+.desktopNav {
+  display: none;
+}
+
+.menuWrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+@media only screen and (min-width: $desktop) {
+  .desktopNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: $primary;
+    padding: 0.65em 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    .merjLogo {
+      flex: 1;
+      max-width: 56px;
+      margin-right: 2em;
+      opacity: 0;
+      cursor: pointer;
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+    nav {
+      flex: 1;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        opacity: 0;
+        li {
+          text-decoration: none;
+          font-weight: 500;
+          align-self: center;
+          position: relative;
+          margin: 2px;
+          span{
+            margin-left: 10px;
+            display: flex;
+          }
+          &::before {
+            display: none !important;
+          }
+          div,
+          a {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+            color: $grey;
+            text-decoration: none;
+            font-size: 0.75em;
+            margin-right: 1.2em;
+            cursor: pointer;
+            &:hover,
+            &:focus {
+              color: $white;
+              outline: none;
+            }
+            svg {
+              display: block;
+            }
+          }
+          &.activeMenuItem {
+            div,
+            a {
+              color: white;
+            }
+          }
+          .dropdownArrow {
+            margin-left: 0.3em;
+          }
+          .btn {
+            text-align: center;
+            padding: 1em 1.5em;
+            font-size: 0.7em;
+            text-transform: uppercase;
+            color: $white;
+            font-weight: 700;
+            background: $accent;
+            width: 100%;
+            letter-spacing: 0.1em;
+            border-radius: 2px;
+            border: none;
+            text-decoration: none;
+            cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            margin: 0.2em 0;
+            outline: none;
+            transition: all 0.25s ease;
+            &:hover,
+            &:focus {
+              background: lighten($accent, 3%);
+              transition: all 0.35s ease;
+            }
+            &:active {
+              background: darken($accent, 5%);
+            }
+          } 
+          ul.rightdropdownMenu{
+            border: 1px solid $border-colour;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 2px;
+            position: absolute;
+            top: 2em;
+            left: -50em;
+            z-index: 2;
+            background: $white;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 1.8em 0;
+            min-width: 40em;
+            opacity: 1;
+            &:before {
+              content: '▲';
+              position: absolute;
+              top: -0.8em;
+              right: 30px;
+              color: $white;
+            }
+            li {
+              align-self: flex-start;
+              margin: 0;
+              .menuColumn {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin: 0;
+                padding: 0 1.6em;
+                border-right: 1px solid $border-colour;
+                min-height: 15em;
+                min-width: 9em;
+                .columnHeader {
+                  text-transform: uppercase;
+                  font-size: 1em;
+                  font-weight: 700;
+                  color: $primary;
+                  margin: 0 0 1em 0;
+                  padding: 0;
+                  cursor: default;
+                }
+                .columnMenu {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-start;
+                  opacity: 1;
+                  li {
+                    div {
+                      color: $primary;
+                      font-weight: 400;
+                      padding: 0.5em 0;
+                      font-size: 1em;
+                      margin: 0;
+                      &:hover {
+                        font-weight: 400;
+                        text-decoration: underline;
+                      }
+                    }
+                    a {
+                      color: $primary;
+                      font-weight: 400;
+                      padding: 0.5em 0;
+                      font-size: 1em;
+                      margin: 0;
+                      &:hover {
+                        font-weight: 400;
+                        text-decoration: underline;
+                      }
+                    }
+                  }
+                }
+              }
+              &:last-child {
+                .menuColumn {
+                  border: none;
+                }
+              }
+            }
+          }
+          ul.dropdownMenu {
+            border: 1px solid $border-colour;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 2px;
+            position: absolute;
+            top: 2em;
+            left: -2em;
+            z-index: 2;
+            background: $white;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 1.8em 0;
+            min-width: 40em;
+            opacity: 1;
+            &:before {
+              content: '▲';
+              position: absolute;
+              top: -0.8em;
+              left: 3.4em;
+              color: $white;
+            }
+            li {
+              align-self: flex-start;
+              margin: 0;
+              .menuColumn {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin: 0;
+                padding: 0 1.6em;
+                border-right: 1px solid $border-colour;
+                min-height: 15em;
+                min-width: 9em;
+                .columnHeader {
+                  text-transform: uppercase;
+                  font-size: 1em;
+                  font-weight: 700;
+                  color: $primary;
+                  margin: 0 0 1em 0;
+                  padding: 0;
+                  cursor: default;
+                }
+                .columnMenu {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-start;
+                  opacity: 1;
+                  li {
+                    div {
+                      color: $primary;
+                      font-weight: 400;
+                      padding: 0.5em 0;
+                      font-size: 1em;
+                      margin: 0;
+                      &:hover {
+                        font-weight: 400;
+                        text-decoration: underline;
+                      }
+                    }
+                  }
+                }
+              }
+              &:last-child {
+                .menuColumn {
+                  border: none;
+                }
+              }
+            }
+          }
+          ul.simpleDropdownMenu {
+            padding: 1.4em;
+            min-width: 14em;
+            flex-direction: column;
+            li {
+              div {
+                color: $primary;
+                font-weight: 400;
+                padding: 0.5em 0;
+                margin: 0;
+                &:hover {
+                  font-weight: 400;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+        &.actionNav {
+          opacity: 0;
+          li {
+            div,
+            &.accessLink {
+              font-size: 0.8em;
+              &.btn {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .desktopNav {
+    font-size: 1em;
+    .merjLogo {
+      font-size: 1.95em;
+      margin-right: 0.8em;
+    }
+    nav {
+      ul {
+        li {
+          font-size: 1.1em;
+          ul.dropdownMenu {
+            font-size: 0.8em;
+            min-width: 54em;
+            li {
+              flex: 1;
+            }
+          }
+          ul.rightdropdownMenu {
+            font-size: 0.8em;
+            min-width: 54em;
+            li {
+              flex: 1;
+            }
+          }
+          ul.simpleDropdownMenu {
+            font-size: 0.9em;
+            min-width: 14em;
+          }
+          .btn {
+            padding: 0.9em 1.5em;
+            font-size: 0.7em;
+          }
+        }
+      }
+    }
+  }
+}

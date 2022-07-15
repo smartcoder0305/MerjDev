@@ -1,0 +1,48 @@
+@import '../../../../static/styles/variables.scss';
+.relatedDocsWrapperDesktop {
+  display: none;
+}
+
+@media screen and (min-width: $desktop) {
+  .relatedDocsWrapperDesktop {
+    display: block;
+    background: $lightgrey;
+    border: 1px solid $border-colour;
+    width: 17.5em;
+    margin: 0 2em 0 6em;
+    padding: 1em;
+    h4 {
+      margin: 0;
+      padding: 0;
+      font-size: 0.95em;
+      text-transform: none;
+      span {
+        font-weight: 400;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        margin-left: 0.5em;
+        &::before {
+          display: none;
+        }
+        a {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          font-size: 0.85em;
+          .DocName {
+            flex: 0.93;
+          }
+          svg {
+            flex: 0.07;
+            margin-right: 0.5em; // flex-basis: 0.2em;
+          }
+        }
+      }
+    }
+  }
+}

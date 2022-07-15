@@ -1,0 +1,116 @@
+@import '../../../../static/styles/variables.scss';
+.MarketOpportunityContainer{
+    width: 95%;
+    margin-left: 10%;
+    .MarketOpportunityBackGround{
+        background-image: url('../../../../static/images/pages/invest-in-merj/invest-hero-banner.png');
+        height: auto;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .MarketOpportunity{
+        color: #8D8C9A;
+        padding: 1px 6em;
+        p{
+            color: #8D8C9A;
+        }
+        h2{
+            text-transform: uppercase;
+            color: #fff;
+        }
+    }
+
+    .MarketOpportunityStatics{
+        width: 100%;
+    }
+
+    .MarketOpportunityStaticsImageContainer{
+       text-align: center;
+    }
+
+    .MarketOpportunityStaticsImage{
+        width: 50%;
+    }
+
+    .MarketOpportunityInvestorIssuersContainer{
+        width: 100%;
+        margin-top: 4em;
+        text-align: center;
+        hr{
+            border-top: 1px solid #F4F5FA;
+        }
+    }
+
+    .MarketOpportunityInvestorIssuers{
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .MarketOpportunityContainer{
+        width: 100%;
+    }
+
+    .MarketOpportunityBackGround{
+        width: 100% !important;
+    }
+
+    .MarketOpportunityInvestorIssuersContainer{
+        width: 100% !important; 
+    }
+
+    .MarketOpportunity{
+        color: #8D8C9A;
+        padding: 10px 37px !important;
+    }
+
+    .MarketOpportunityInvestorIssuers{
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+
+
+    .MarketOpportunityContainer{
+        margin-left: 0;
+    }
+    .MarketOpportunity{
+        h2{
+            font-size: 1.2em !important;
+        }
+    }
+
+    .MarketOpportunityStaticsImage{
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .MarketOpportunity{
+        padding: 1px 20px !important;
+    }
+
+    .MarketOpportunityInvestorIssuersContainer{
+
+        hr{
+            margin-bottom: 2em !important;
+        }
+
+        h3{
+            font-size: 1em !important; 
+        }
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .MarketOpportunity{
+        h2{
+            font-size: 1em !important;
+        }
+    }
+}

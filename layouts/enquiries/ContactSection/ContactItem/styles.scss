@@ -1,0 +1,14 @@
+@import '../../../../static/styles/variables.scss';
+
+.contactUtilitiesSingle {
+  margin-bottom: 2em;
+  max-width: 41em;
+  margin: 0 auto;
+  border-bottom: 1px solid $border-colour;
+  h5 {
+    margin-bottom: 0.2em;
+  }
+  a {
+    margin: 0.5em 0 0 0;
+  }
+}

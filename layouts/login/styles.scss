@@ -1,0 +1,32 @@
+@import '../../static/styles/variables.scss';
+.contactWrapper {
+    margin-bottom: 2em;
+    .left {
+        background: transparent;
+    }
+    .right {
+        background: transparent;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .contactWrapper {
+        max-width: 40em;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 996px) {
+    .contactWrapper {
+        margin-bottom: 4em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .left,
+    .right {
+        flex-basis: 46%;
+    }
+}

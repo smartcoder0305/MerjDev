@@ -1,0 +1,32 @@
+@import '../../../../static/styles/variables.scss';
+
+.keyPrioritiesSingle {
+  padding: 1.5em 0;
+  margin: 0 0 0 0;
+  border-radius: 6px;
+  border-top: 1px solid $border-colour;
+  .title {
+    color: $primary;
+    font-weight: 700;
+    font-size: 1.3em;
+    position: relative;
+    padding: 0;
+    margin: 0.3em 0 0 0;
+  }
+  p {
+    color: $primary;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .keyPrioritiesSingle {
+    padding: 2em 0;
+    .title {
+      font-size: 1.4em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}

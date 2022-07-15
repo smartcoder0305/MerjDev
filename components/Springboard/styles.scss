@@ -1,0 +1,39 @@
+@import '../../static/styles/variables.scss';
+.mediumSpringboard {
+    background: $primary;
+    color: $white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2.2em 0 2.5em 0;
+    border: 1px solid $bg-1;
+    flex: 1;
+    &:first-child {
+        border-right: none;
+    }
+    h2 {
+        margin: 0;
+        font-size: 1.3em;
+    }
+    p {
+        margin: 0.5em 0 1em 0;
+        font-size: 1em;
+        color: $white;
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .mediumSpringboard {
+        padding: 8em 0 7em 0;
+        h2 {
+            font-size: 1.7em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1em;
+            margin-bottom: 2em;
+        }
+    }
+}

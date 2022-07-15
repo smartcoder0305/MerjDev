@@ -1,0 +1,47 @@
+@import '../../static/styles/variables.scss';
+.FormWrapper {
+  background: $lightgrey;
+  border: 1px solid $border-colour;
+  border-radius: 2px;
+  padding: 1.2em;
+  margin: 1em auto;
+  max-width: 32em;
+  text-align: left;
+  h3 {
+    margin: 0.5em 0;
+    padding-left: 0;
+    &::before {
+      display: none;
+    }
+  }
+  .requiredWarning {
+    text-transform: uppercase;
+    font-size: 0.65em;
+    margin: 2em 0 0 0;
+    span {
+      color: red;
+    }
+  }
+  p {
+    font-size: 0.85em;
+    line-height: 1.46;
+  }
+  form {
+    margin-bottom: 0;
+    fieldset {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+  }
+}
+
+
+@media only screen and (min-width: $desktop) {
+  .FormWrapper {
+    padding: 1.8em;
+    h3 {
+      font-size: 1.2em;
+    }
+  }
+}

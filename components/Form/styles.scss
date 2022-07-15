@@ -1,0 +1,126 @@
+@import '../../static/styles/variables.scss';
+
+:global {
+    .picker-container {
+        .picker__control {
+            border-radius: 2px !important;
+            max-height: 2.625em !important;
+        }
+        .picker__input{
+            max-height: 2.625em !important;
+        }
+        .picker__single-value{
+            top: 37% !important;
+        }
+        .picker__value-container--has-value{
+            max-height: 2.625em !important;
+            position: unset !important;
+        }
+        input:not([type=checkbox]):not([type=radio]):not([type=submit]):focus,
+        select:focus,textarea:focus{
+            border-color: unset !important;
+            box-shadow: unset  !important;
+        }
+    }
+}
+
+.row {
+}
+
+.smallLabel {
+    font-size: 0.8em;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: $primary;
+}
+
+.warning {
+    color: $error;
+}
+
+input[type='submit']:disabled {
+    opacity: 0.5;
+}
+
+.picker #react-select-2-input {
+    max-height: 20px !important;
+}
+.detailsFormRadio {
+    width: 50%;
+    display: inline-block;
+}
+
+.detailsFormRadio:hover {
+    cursor: pointer;
+}
+
+.picker div input {
+        max-height: 20px !important;
+}
+
+.picker > input{
+    max-height: 20px !important;
+}
+
+.radioInput{
+    margin: 0.5em 0px 1em -2px !important;
+    display: inline-block;
+    padding: 30px 0px;
+    border: 1.5px #7d2caf solid !important;
+    text-align: center !important;
+    width: 100%;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.submitContainer {
+    text-align: right;
+}
+@media only screen and (min-width: $desktop){
+    .applicationStyle{
+        width: 100% !important;
+    }
+    .radioInput .withBackground{
+    }
+}
+@media only screen and (max-width: $mobile){
+    .applicationStyle{
+        width: inherit !important;
+        display: block !important;
+        flex: unset;
+    }
+    .radioInput .withBackground{
+        width: 100%;
+    } 
+}
+
+.submitContainer {
+    text-align: right;
+    width: 100% !important;
+}
+.withBackground{
+    margin: 0.5em 0px 1em -2px !important;
+    display: inline-block;
+    padding: 30px 0px;
+    border: 1.5px #7d2caf solid !important;
+    text-align: center !important;
+    width: 100%;
+    font-size: larger;
+    color: #fff;
+    background-color:#7d2caf;
+    position: relative;
+}
+input[type=radio]{
+    cursor: pointer;
+    &.detailsRadio{
+        margin-top: 20px;
+        width: 20px;
+        height: 20px;
+        display: none;
+    }
+}
+.radioDescription{
+    height: 42px !important;
+    font-size: 13px;
+    font-weight: 300;
+}

@@ -1,0 +1,42 @@
+.mapPulse {
+    background-image: url('/static/images/pages/about/about-merj/map-with-pulse.png');
+    background-repeat: no-repeat;
+    background-position: 69% 78%;
+    background-size: 60em;
+    min-height: 18em;
+    margin: -0.9em 0 -4em 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .mapPulse {
+        min-height: 34em;
+        margin: 0em 0 0em 0;
+        background-position: center center;
+        background-size: 60em;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .mapPulse{
+        background-position: 50% 50%;
+        background-size: 32em;
+        min-height: 18em;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 450px){
+    .mapPulse{
+        background-position: 50% 50%;
+        background-size: 25em;
+        min-height: 14em;
+        margin: 0;
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .mapPulse{
+        background-size: 20em;
+    }
+}

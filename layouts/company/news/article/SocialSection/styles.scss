@@ -1,0 +1,44 @@
+@import '../../../../../static/styles/variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 3em 0;
+  padding: 1.5em 0;
+  border-top: 1px solid $border-colour;
+  border-bottom: 1px solid $border-colour;
+}
+
+.shareCount {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #b4b6c6;
+  font-size: 0.7em;
+  text-align: center;
+  margin: 0 2em 0 0;
+  padding: 0 2em 0 0;
+  border-right: 1px solid $border-colour;
+  span {
+    display: block;
+    font-size: 1.8em;
+    color: $primary;
+  }
+}
+
+.socialButton {
+  margin: 0.2em;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    justify-content: flex-start;
+    padding: 1.8em 0 1.8em 1em;
+  }
+}

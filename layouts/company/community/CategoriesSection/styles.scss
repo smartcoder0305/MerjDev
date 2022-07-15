@@ -1,0 +1,32 @@
+@import '../../../../static/styles/variables.scss';
+
+.categoriesSection {
+  margin-bottom: 3em;
+}
+
+.categoryLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $border-colour;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    .label {
+      text-decoration: none;
+    }
+  }
+}
+
+.label {
+  color: $secondary;
+  font-weight: 500;
+  padding: 0.8em 0;
+  text-decoration: underline;
+}
+
+.rightArrow {
+  transform: rotate(-90deg);
+  color: $black;
+}

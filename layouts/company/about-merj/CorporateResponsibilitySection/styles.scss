@@ -1,0 +1,80 @@
+@import '../../../../static/styles/variables.scss';
+//
+.corporateResponsibiltyWrapper {
+  padding: 1em 0 3em 0;
+  background: url('../../../../static/images/pages/background-pattern.jpg');
+  .intro {
+    max-width: 63em;
+    h1 {
+      font-size: 2.3em;
+      margin-bottom: 0.8em;
+    }
+    p {
+      font-size: 1.1em;
+      max-width: 40em;
+    }
+  }
+  .CorporateResponsibilityInfo {
+    .left {
+    }
+    .right {
+      img {
+        max-width: 100%;
+        box-shadow: 0 7px 9px 0 rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .corporateResponsibiltyWrapper {
+    .intro {
+      margin: 0 0 4em 0;
+      h1 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1.3em;
+      }
+    }
+    .CorporateResponsibilityInfo {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        flex: 1;
+        padding-right: 4em;
+      }
+      .right {
+        flex: 1;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .corporateResponsibiltyWrapper {
+    padding: 4em 0 8em 0;
+    .intro {
+      h1 {
+        font-size: 3.8em;
+      }
+      p {
+        font-size: 1.5em;
+      }
+    }
+    .CorporateResponsibilityInfo {
+      .left {
+        flex: 1;
+        p {
+          max-width: 30em;
+        }
+      }
+      .right {
+        flex: 0.8;
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+@import '../../../../static/styles/variables.scss';
+
+.theCompanyWrapper {
+  .theCompanyInner {
+    .left {
+      h1 {
+        font-size: 2.3em;
+        margin-bottom: 0.8em;
+      }
+
+      .legalInfo {
+        margin: 1em 0 2.5em 0;
+        padding: 0 0 0 1.2em;
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 0.25em;
+          height: 100%;
+          display: inline-block;
+          margin-right: 0;
+          background: $accent-1;
+          background: -moz-linear-gradient(45deg, $accent-1 0%, $buzz 100%);
+          background: -webkit-linear-gradient(45deg, $accent-1 0%, $buzz 100%);
+          background: linear-gradient(45deg, $accent-1 0%, $buzz 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$accent-1, endColorstr=$buzz, GradientType=1);
+        }
+
+        h4 {
+          margin: 0 0 0.2em 0;
+        }
+
+        p {
+          margin: 0;
+          color: $primary;
+        }
+      }
+
+      p {
+        color: $primary;
+        margin-bottom: 2em;
+      }
+    }
+
+    .right {
+      figure {
+        margin: 0;
+
+        img {
+          max-width: 100%;
+        }
+
+        figcaption {
+          text-align: center;
+          color: $primary;
+          font-size: 0.85em;
+          margin: 1em auto 1em;
+          max-width: 70%;
+        }
+      }
+    }
+  }
+}
+
+.linkContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.linkImage {
+  margin-left: 8px;
+  margin-top: 4px;
+}
+
+@media only screen and (min-width: $desktop) {
+  .theCompanyWrapper {
+    margin: 3em 0;
+    .theCompanyInner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .left {
+        flex: 1;
+        padding: 0 4em 0 0;
+
+        h1 {
+          font-size: 3em;
+        }
+      }
+
+      .right {
+        flex: 0.8;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .theCompanyWrapper {
+    margin: 5em 0;
+
+    .theCompanyInner {
+      .left {
+        h1 {
+          font-size: 4em;
+        }
+
+        .legalInfo {
+          margin: 1em 0 3.5em 0;
+
+          h4 {
+            padding-bottom: 0m;
+          }
+        }
+
+        p {
+          margin-top: 3em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile){
+  .theCompanyWrapper{
+    margin-top:30px;
+  }
+}

@@ -1,0 +1,66 @@
+@import '../../static/styles/variables.scss';
+.jumboTronWrapper {
+    background-image: url('../../static/images/components/Jumbotron/company-hero-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: $primary;
+    color: $white;
+    padding: 0.5em 0;
+    h1 {
+        text-transform: uppercase;
+        font-weight: 900;
+        margin: 0em 0 0.6em 0;
+        font-size: 2.1em;
+    }
+    .subText {
+        font-size: 1.1em;
+        line-height: 1.5;
+        margin: 0 0 2em 0;
+        max-width: 38em;
+        color: $border-colour;
+    }
+}
+
+.secondary {
+    background-image: url('../../static/images/components/Jumbotron/news-bg.gif');
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: auto;
+    border-bottom: 1px solid $border-colour;
+    h1,
+    .subText {
+        color: $primary;
+    }
+    h1 {
+        margin-bottom: 0.25em;
+    }
+    .subText {
+        margin-bottom: 0;
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: $mobile){ 
+    .jumboTronWrapper{
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .jumboTronWrapper {
+        padding: 6em 0;
+        h1 {
+            font-size: 4em;
+        }
+        .subText {
+            font-size: 1.5em;
+        }
+    }
+    .secondary {
+        padding-bottom: 3em;
+        .subText {
+            font-size: 1.1em;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@import '../../static/styles/variables.scss';
+.UIEnhancer {
+    padding: 20px 0px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #c06d75, #954f8e);
+    color: white;
+    display: flex;
+    margin: 0px 0px 20px 0px;
+  
+    .icon{
+      width: 16%;
+    }
+    
+    .texts{
+      width: 90%;
+    }
+    
+    .title {
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
+    .content {
+      font-size: 13px;
+      color: #dab8c8;
+    }
+    .bannerSVGIcon {
+      height: 40px;
+      position: relative;
+      top: 15px;
+      left: 30%;
+      width: 40px;
+      
+    }
+  }
+
+
+  @media only screen and (max-width: $desktop) {
+    .UIEnhancer {
+    .icon{
+        width: 18% !important;
+        padding-top: 5px;
+      }
+  }
+
+  }
+  
+  @media only screen and (max-width: $mobile){
+    .UIEnhancer {
+        margin-top: 20px;
+        padding: 20px 20px;
+        .icon{
+            display: none;
+        width: 23% !important;
+            
+            
+        }
+         
+      .texts{
+        width: 100% !important;
+      }
+    }
+  }
+  

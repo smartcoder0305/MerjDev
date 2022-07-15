@@ -1,0 +1,90 @@
+@import '../../static/styles/variables.scss';
+.cookieStrip {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $black;
+  padding: 1.5em 1em;
+  color: $white;
+  font-size: 0.75em;
+  transition: transform 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .right,
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5em 0;
+    p {
+      color: $white;
+      margin: 0;
+      padding: 0;
+      font-size: 0.75em;
+    }
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .left {
+    justify-content: flex-start;
+    img {
+      display: block;
+      margin: 0 0.8em 0 0;
+    }
+  }
+  .right {
+    justify-content: flex-end;
+    .closeButtonWrapper {
+      margin: 0.5em;
+      button {
+        background: $bg-1;
+        border: none;
+        width: 1.4em;
+        height: 1.4em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 25px;
+        flex-grow: 0;
+        flex-shrink: 1;
+        font-size: 1.7em;
+        color: $white;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+}
+
+.animateIn {
+  transform: translateY(0);
+}
+
+.animateOut {
+  transform: translateY(100%);
+}
+
+@media only screen and (min-width: 768px) {
+  .cookieStrip {
+    padding: 0.5em 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    .right,
+    .left {
+      margin: 0 1em;
+    }
+    .right {
+      p {
+        font-size: 0.9em;
+      }
+      .closeButtonWrapper {
+        margin-left: 1.5em;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import '../../../static/styles/variables.scss';
+
+.quickLinksCardsWrapper {
+  .quickLinksCard {
+    background: $primary;
+    color: $white;
+    border-radius: 4px;
+    padding: 1.875em;
+    margin: 1em 0;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-bottom: 0.6em;
+      width: 4.3em;
+    }
+    .title {
+      font-weight: 700;
+      color: $white;
+      font-size: 1.2em;
+      margin: 0.4em 0;
+      text-align: center;
+    }
+    .description {
+      text-align: center;
+      margin-bottom: 1em;
+      max-width: 16em;
+      height: 2.5em;
+    }
+
+    button {
+      font-size: 0.7em;
+      width: auto;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .quickLinksCardsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .quickLinksCard {
+      flex-basis: 31.5%;
+      button {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .quickLinksCardsWrapper {
+    .quickLinksCard {
+      button {
+        padding-left: 2em;
+        padding-right: 2em;
+      }
+      img {
+        margin: 2em 0;
+      }
+      font-size: 0.95em;
+    }
+  }
+}
+@media only screen and (max-width: 767px){
+  .quickLinksCardsWrapper {
+    .quickLinksCard {
+        margin-bottom: 30px;
+      }
+    }
+}

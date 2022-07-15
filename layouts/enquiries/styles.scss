@@ -1,0 +1,140 @@
+@import '../../static/styles/variables.scss';
+.container{
+  margin-bottom: 100px;
+}
+
+.marketTimesTable {
+  background: $white;
+  box-shadow: none;
+  border: 1px solid $border-colour;
+  overflow: hidden;
+  font-size: 0.95em;
+  margin: 1.5em 0;
+  width: 100%;
+  display: table !important;
+  border-collapse: collapse;
+  thead {
+    tr {
+      td {
+        font-weight: 700;
+      }
+    }
+  }
+  tr {
+    background: $white;
+    border-bottom: 1px solid $border-colour;
+    &:nth-child(even) {
+      background: $lightgrey;
+    }
+    td {
+      white-space: normal;
+      color: black;
+      padding: 0.6em;
+
+      a {
+        color: $secondary;
+      }
+      div{
+        max-width: 151px;
+      }
+    }
+  }
+}
+.contactWrapper {
+  margin-bottom: 2em;
+  max-width: 41em;
+  margin: 0 auto;
+  .left {
+    background: transparent;
+  }
+  .right {
+    background: transparent;
+  }
+}
+.marketWrapper{
+  margin-bottom: 2em;
+  max-width: 58em;
+  margin: 0 auto;
+  .left {
+    background: transparent;
+  }
+  .right {
+    background: transparent;
+  }
+}
+table.marketHours{
+  background: $white;
+  box-shadow: none;
+  border: 1px solid $border-colour;
+  overflow: hidden;
+  font-size: 0.95em;
+  margin: 1.5em 0;
+  width: max-content;
+  thead {
+    tr {
+      td {
+        font-weight: 700;
+      }
+    }
+  }
+  tr {
+    background: $white;
+    border-bottom: 1px solid $border-colour;
+    &:nth-child(even) {
+      background: $lightgrey;
+    }
+    td {
+      white-space: normal;
+      color: black;
+      padding: 0.6em;
+
+      &:first-of-type {
+          width: 100%;
+      }
+      a {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:425){
+  .contactWrapper {
+   min-width: 40em !important;
+  }
+}
+
+ul.listStyle{
+  width: 100%;
+  padding-left: 2.4em !important;
+  li {  
+    list-style-type: none !important;
+    }
+}
+
+.centerItems{
+  padding-left: 1.9em;
+  margin: 0.5em 0 1em 1em;
+  font-size: 1.1em;
+}
+
+.marketclosingtime{
+  padding-left: 38%;
+  margin: 0.5em 0 1em 1em;
+  font-size: 1.1em;
+}
+
+
+@media only screen and (min-width: 996px) {
+  .contactWrapper {
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .left,
+  .right {
+    flex-basis: 46%;
+  }
+}

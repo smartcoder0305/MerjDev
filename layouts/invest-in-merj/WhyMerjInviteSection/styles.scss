@@ -1,0 +1,16 @@
+.inviteContainer{
+    background: #FAFBFF;
+    padding: 20px;
+    font-weight: bold;
+    border: 1px solid #F0F1F5;
+    font-size: 30px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 997px){
+
+    .inviteContainer{
+        font-size: 20px;
+    }
+}

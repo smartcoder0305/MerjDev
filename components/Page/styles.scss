@@ -1,0 +1,82 @@
+@import '../../static/styles/variables.scss';
+
+.Page {
+  margin-top: 72px;
+  position: relative;
+}
+
+.Page::before {
+  content: "";
+  margin-top: -72px;
+  background-image: url('/static/images/backgrounds/back\ \(3\).jpg');
+  background-repeat: repeat-y;
+  background-size: contain;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.navContainer {
+  align-self: flex-start;
+  left: 0;
+}
+
+.contentContainer {
+  img {
+    margin: 1em 0;
+  }
+}
+
+.documentsContainer {
+  align-self: flex-start;
+  right: 0;
+}
+
+@media screen and (max-width: $mobile) {
+  .navContainer,
+  .documentsContainer {
+    min-width: auto;
+    left: auto;
+    right: auto;
+    align-self: auto;
+  }
+  .contentContainer {
+  }
+  .Page {
+    margin-top: 0px;
+  }
+  
+}
+
+@media screen and (min-width: $desktop) {
+  .Page {
+    display: flex;
+  }
+  .contentContainer {
+    margin: -6em 6em 12em 15em;
+    padding-right: 1em;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .navContainer {
+    left: auto;
+    right: 80%;
+  }
+  .documentsContainer {
+    left: 78%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .navContainer {
+    right: 70%;
+  }
+  .documentsContainer {
+    left: 68%;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../static/styles/variables.scss';
+
+@media only screen and(max-width: $mobile){
+    .mobileScreen{
+    }
+}
+
+@media only screen and (min-width: $desktop){
+    .readOnlyStyle{
+        margin-left: 15%;
+        width: 100%;
+    }
+}

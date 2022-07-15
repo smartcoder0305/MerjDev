@@ -1,0 +1,131 @@
+@import '../../../static/styles/variables.scss';
+
+
+.DealSummaryDisclaimer {
+  font-weight: bold;
+    font-size: 11px;
+    width: 95%;
+    margin: 10px auto;
+    font-style: italic;
+    word-break: break-word;
+    margin: 11px -16px;
+
+    a {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+}
+
+
+.ShareBoxContainer {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  background: #171723;
+  margin: 0 -30px;
+
+}
+.ColourBarContainer {
+  background: #171723;
+  height: 200px;
+
+  .ColourBar {
+    width: 0.25em;
+    height: 130px;
+    margin-top: 35px;
+    background: #f76b1c;
+    background: -moz-linear-gradient(45deg, #CE8075 0%, #5352BA 100%);
+    background: -webkit-linear-gradient(45deg, #CE8075 0%, #5352BA 100%);
+    background: linear-gradient(45deg, #CE8075 0%, #5352BA 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$accent-1, endColorstr=$buzz, GradientType=1);
+  }
+  
+}
+
+.ShareBox {
+  background-color: #171723;
+  padding: 50px 0px;
+  color: white;
+  height: 200px;
+  max-height: 200px;
+  width: 300px;
+
+ 
+  
+}
+.percentageContainer {
+  margin-left: 43%;
+}
+.ShareBoxTitle {
+  font-size: 18px;
+}
+
+.ShareBoxAmount {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.SharePrice {
+  span {
+    color: #EC6929;
+  }
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .keyPrioritiesWrapper {
+    .inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .single {
+        flex-basis: 48%;
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+
+  .ShareBoxContainer {
+    flex-direction: column;
+  }
+
+  .ShareBox {
+    width: 90%;
+  }
+
+  .percentageContainer {
+    margin-left: 47.5%;
+    margin-top: 5px;
+  }
+
+
+
+  .ColourBarContainer {
+    background: #171723;
+    height: 0.25em;
+    width: 90%;
+    .ColourBar {
+      width: 60%;
+      height: 0.25em;
+      margin: 0 auto;
+      background: #f76b1c;
+      background: -moz-linear-gradient(45deg, #CE8075 0%, #5352BA 100%);
+      background: -webkit-linear-gradient(45deg, #CE8075 0%, #5352BA 100%);
+      background: linear-gradient(45deg, #CE8075 0%, #5352BA 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$accent-1, endColorstr=$buzz, GradientType=1);
+    }
+    
+  }
+}
+@media only screen and (min-width: 996px) {
+  .keyPrioritiesWrapper {
+    .inner {
+      .single {
+        margin-bottom: 2em;
+      }
+    }
+  }
+}

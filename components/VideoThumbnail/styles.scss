@@ -1,0 +1,41 @@
+@import '../../static/styles/variables.scss';
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/static/images/components/VideoThumbnail/video-poster-general.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    padding: 2em;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.caption {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+@media screen and (min-width: $desktop) {
+    .container {
+        padding: 4em 2em;
+    }
+    .largeContainer {
+        padding: 12em 2em;
+    }
+    .caption {
+        font-size: 0.9em;
+    }
+}

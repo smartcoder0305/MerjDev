@@ -1,0 +1,90 @@
+@import '../../../static/styles/variables.scss';
+
+.whyMerjInner {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+    
+    hr {
+        margin-top: 50px;
+    }
+    button {
+        margin-left: 0;
+    }
+}
+
+.downloadIcon {
+    fill: white;
+}
+.clock{
+    fill: white;
+}
+
+.downloadsContainer {
+    background: #FAFBFF;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    border: 1px solid #F0F1F5;
+}
+
+@media only screen and(max-width: $mobile){
+    .downloadsContainer{
+        padding: 9px;
+        width: 100%
+    }
+    .downloadsItem{
+        font-size: 12px;
+    }
+}
+
+a[disabled="disabled"] {
+    pointer-events: none;
+}
+.linkDisabled{
+    opacity: .5 !important;
+}
+.smallText{
+    font-size: 11px;
+}
+.downloadsItem {
+    padding: 20px;
+    background: linear-gradient(to right,#FD734E, #794488);;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: white;
+    font-weight: bold;
+    
+        span {
+            float: right;
+        }
+
+    
+}
+
+.downloadsTitle {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: $desktop) {
+    .whyMerjInner {
+        flex-direction: row;
+        .right {
+            flex: 0.8;
+            padding: 0 0 0 2em;
+        }
+        .left {
+            flex: 1;
+            padding: 0 2em 0 0;
+            h1 {
+                font-size: 3em;
+            }
+        }
+    }
+}

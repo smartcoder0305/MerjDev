@@ -1,0 +1,88 @@
+@import '../../../../static/styles/variables.scss';
+.countdownInner {
+  .title {
+    border-bottom: 1px solid $bg-1;
+    padding: 1em;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+  .countdownBoxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .Days,
+    .Hours,
+    .Minutes {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid $bg-1;
+      border-right: 1px solid $bg-1;
+      padding: 1em 0.5em;
+      .label {
+        font-weight: 500;
+        font-size: 0.9em;
+      }
+      .count {
+        color: $secondary;
+        font-size: 2em;
+        line-height: 1.2;
+        font-weight: 700;
+      }
+    }
+    .Minutes {
+      border-right: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .countdownInner {
+    display: flex;
+    flex-direction: column;
+    .title {
+      flex-basis: 10%;
+      padding: 1.5em;
+      font-size: 0.9em;
+    }
+    .countdownBoxes {
+      flex: 1;
+      .Days,
+      .Hours,
+      .Minutes {
+        border-bottom: none;
+        padding: 2em 0.5em;
+        .label {
+          font-size: 1em;
+        }
+        .count {
+          font-size: 2.6em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .countdownInner {
+    .countdownBoxes {
+      flex: 1;
+      .Days,
+      .Hours,
+      .Minutes {
+        padding: 3em 0.5em;
+        .label {
+          font-size: 1.2em;
+        }
+        .count {
+          font-size: 3em;
+        }
+      }
+    }
+  }
+}

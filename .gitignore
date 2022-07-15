@@ -1,0 +1,9 @@
+.next/*
+node_modules/*
+out/*
+dump/*
+/.vs
+
+# static files such as PDFs are on the server in folder on the root named "files", do not add such a folder into source control
+files/
+pages/files/

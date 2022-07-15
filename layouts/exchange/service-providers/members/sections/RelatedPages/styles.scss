@@ -1,0 +1,19 @@
+@import '../../../../../../static/styles/variables.scss';
+.link {
+  color: $secondary;
+  text-decoration: underline;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  &:active,
+  &:visited {
+    color: darken($secondary, 15%);
+  }
+}
+
+.container{
+  margin-bottom: 100px;
+}

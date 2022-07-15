@@ -1,0 +1,364 @@
+@import '../../static/styles/variables.scss';
+$primary-blue: #21267a;
+$secondary-blue: #010066;
+$primary-dark-grey: #f2f0ed;
+$primary-yellow: #cc9900;
+.contentPortfolio {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .clientName {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.accountContent{
+    border: solid 2px black;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    padding: 2%;
+    display: flex;
+}
+
+.buttonStyle{
+    display: flex;
+    flex-direction: row;
+    div{
+        display: flex;
+        flex-direction: row;
+        margin-right: 1%;
+        input[type=submit]{
+            min-width: 100px;
+        }
+    }
+}
+.accountCurrency{
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 0 0;
+}
+.weirdScreen{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.accountName{
+    font-size:0.7500em;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 0 0;
+}
+.accountBalance{
+    font-size: 0.7500em;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 0;
+}
+
+.portfolio {
+    font-size: 50px;
+    margin-bottom: 20px;
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1e1e1;
+}
+.portfolioHeading{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.clientDetails{
+    font-size: 25px !important;
+    display: flex;
+    flex-direction: column;
+
+    .greating{
+        margin-block-start: 0.33em !important;
+        margin-block-end: 0.2em !important;
+        text-align: right;
+    }
+    .infor{
+        margin-block-start: 0.33em !important;
+        margin-block-end: -0.5em !important;
+        font-size: 12px !important;
+        color: gray;
+    }
+}
+
+.portfolioDataContainer {
+    padding: 0px 0px 35px 0px;
+    border-radius: 6px;
+    width: 75%;
+    margin: 10px auto;
+    margin-top: 30px;
+}
+
+
+.portfolioRow {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 20px 0px;
+
+    div {
+        display: inline;
+    }
+
+    div:last-child {
+        float: right;
+        text-align: right;
+        color: $primary-blue;
+        font-weight: 800;
+    }
+}
+
+.portfolioValueContainer {
+    background-image: -webkit-linear-gradient(to bottom,rgba(253, 149, 81, 1), rgba(121, 68, 136, 1));
+    background-image:linear-gradient(to bottom,rgba(253, 149, 81, 1), rgba(121, 68, 136, 1));
+    width: 75%;
+    margin: 10px auto;
+    padding: 15px;
+    color: white;
+    border-radius: 6px;
+}
+
+.portfolioValue {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+.valueRight {
+    border-left: 2px solid rgba(255, 255, 255, 0.50);
+    padding-left: 20px;
+}
+
+.portfolioValueTitle {
+    color: rgba(255, 255, 255, 0.57);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.portfolioValueAmount {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f2f0ed;
+}
+.SSO{
+    display:inline-block; 
+    margin: 0;
+}
+
+@media only screen and(max-width: 1166px)
+{
+    .accountContent{
+        border: solid 1px black;
+        padding: 7px;
+        display: block;
+    }
+
+    .weirdScreen{
+        display: inline-block;
+        min-width: 35%;
+    }
+
+    .accountCurrency{
+        // font-size: 10%;
+        font-size: 50px;
+        min-width: 35%;
+        display: inline-block;
+        font-weight: 500;
+    }
+    .accountBalance{
+        // font-size: 5%;
+        display: block;
+    }
+  
+    .accountName{
+        // font-size: 5%;
+        display: block;
+    }
+    .buttonStyle{
+        display: inline-block;
+        div{
+            input[type=submit]{
+                max-width: 100px;
+                min-width: 99px;
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+@media only screen and(max-width: $mobile){
+    .accountContent{
+        border: solid 1px black;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        padding: 9px; 
+        display: block;
+    } 
+    .accountCurrency{
+        font-size: 30px;
+        display: block;
+        flex-direction: unset;
+    }
+    .accountBalance{
+        display: block;
+        font-size: 12px;
+        padding: 10px 0 0 0;
+        flex-direction: unset;
+    }
+    .SSO{
+        display: block;
+    }
+    .accountName{
+        display: block;
+        font-size: 12px;
+        padding: 10px 0 0 0;
+        flex-direction: unset;
+    }
+    .buttonStyle{
+        display: block;
+        flex-direction: unset;
+        div{
+            margin-right: 1%;
+            display: inline-block;
+            width: 49%;
+            input[type=submit]{
+                max-width: 100%;
+                min-width: 100px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .portfolioDataContainer{
+        width: 85% !important;
+    }
+
+    .portfolioValueContainer {
+        width: 85% !important;
+    }
+
+
+    .infor {
+        text-align: right;
+    }
+    .mobileScreen{
+    }
+    .content{    
+        width: 100% !important;
+        padding: 20px !important;
+    }
+    .contentPortfolio{
+        padding: 15px !important;    
+        width: 100% !important;
+    }
+    
+    .portfolioHeading{
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .portfolioValueContainer{
+        padding-top: 5px !important;
+    }
+    .portfolioValue{
+        width:100% !important;
+        display: unset !important;
+        text-align: center !important;
+    }
+    .portfolioValueTitle{
+        margin-top: 20px;
+    }
+    .valueLeft{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .valueRight {
+        padding-left: 0px !important;
+        text-align: center;
+        margin-top: 20px;
+        border-top: 2px solid rgba(255, 255, 255, 0.5);
+        border-left: 0px !important;
+    }
+
+    .clientDetails {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and(max-width: 640px){
+    .clientName{
+        font-size: 18px !important;
+        font-family: Arial !important;
+        font-weight: bold !important;
+        margin-bottom: 0px !important;
+    }
+    
+    .portfolioHeading{
+        font-size: 35px !important;
+        margin-top: -2px !important;
+    }
+    .portfolioDataContainer{
+        font-size: 14px !important;
+        margin-top: 10px;
+    }
+}
+@media only screen and(max-width: 425px){
+    .buttonStyle{
+        
+        div{
+            margin-right: 0;
+            display: block;
+            width: 100%;
+        }
+    } 
+
+    .portfolioHeading{
+        font-size: 31px !important;
+    }
+    .clientDetails{
+        font-size: 17px !important;
+    }
+    .greating{
+        margin-block-end: 0.2em !important;
+    }
+
+    .clientDetails .infor {
+        margin-block-start: 0.33em !important;
+        margin-block-end: .5em !important;
+        font-size: 9px !important;
+    }
+
+    .portfolioDataContainer{
+        width: 96% !important;
+    }
+    
+    .portfolioValueContainer {
+        width: 96% !important;
+    }
+}
+
+@media only screen and(max-width: 375px){
+    .clientDetails .infor {
+        margin-block-start: -0.67em !important;
+        font-size: 9px !important;
+        margin-left: 20px !important;
+    }
+}

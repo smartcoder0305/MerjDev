@@ -1,0 +1,26 @@
+@import '../../../../../static/styles/variables.scss';
+.container {
+  margin: 2em 0;
+  
+  h3 {
+    padding: 0 0 0 0.7em;
+    margin-bottom: 2em;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      height: 100%;
+      width: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $newsgeneral;
+    }
+  }
+}
+
+.buzzH3 {
+  &:before {
+    background: $buzz;
+  }
+}

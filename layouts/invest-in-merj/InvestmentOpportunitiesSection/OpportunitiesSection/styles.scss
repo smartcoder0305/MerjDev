@@ -1,0 +1,27 @@
+@import '../../../../static/styles/variables.scss';
+
+.OpportunitiesWrapper {
+  list-style: none;
+  margin: 4em 0 2em 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li {
+    margin: 0;
+    flex-basis: 46%;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .OpportunitiesWrapper {
+    margin-top: 8em;
+    li {
+      flex-basis: 22%;
+    }
+  }
+}

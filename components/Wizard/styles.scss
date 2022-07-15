@@ -1,0 +1,263 @@
+@import '../../static/styles/variables.scss';
+
+
+
+.wizardContainer {
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 50px 0px;
+}
+
+.wizardBackground {
+  background-image: url('./bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wizardTitle {
+  width: 85%;
+  margin: 20px auto;
+  font-weight: bold;
+  text-align: left;
+  font-size: 50px;
+}
+.progressBarWrapper {
+  position:relative;
+  margin:20px;
+  display: inline-block;
+  width: 50px;
+}
+.progressBarArc {
+  position:absolute;
+  top:0;
+  left:0;
+  width:50px;
+  height:50px;
+  border-radius:100%;
+  border:3px solid;
+}
+.progressBarComplete {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background:  linear-gradient(#FD8D51, #794488);
+}
+
+.progressBarComplete::after {
+  position: absolute;
+  top: 0px; bottom: 0px;
+  left: 0px; right: 0px;
+  background: linear-gradient(to top,#FD8D51, #794488);
+  content: '';
+  z-index: -1;
+  border-radius: 360px;
+}
+
+.progressBarClock {
+  position: absolute;
+  top: -15px !important;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: transparent;
+  border:1px solid;
+  
+}
+
+.subtext {
+  font-size: 14px;
+  color: white;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin-top: -15px;
+}
+
+.verifySubtext {
+  font-size: 14px;
+  color: white;
+  padding-bottom: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.progressBarArcActive {
+  position:absolute;
+  top:0;
+  left:0;
+  width:50px;
+  height:50px;
+  border-radius:100%;
+  border:3px solid;
+
+
+}
+
+.wizardItem {
+  display: inline-block
+}
+.check {
+  left: 20px;
+  top: 11px;
+  width: 10px;
+  position: relative;
+  height: 23px;
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.clock {
+  position: relative;
+}
+
+.icon {
+  width: 25px;
+  position: relative;
+  height: 26px;
+  top: 9px;
+  left: 1px;
+  fill: white;
+}
+
+.progressBarArcStart {
+  border-color:transparent #794488 #794488 #794488;
+
+  transform: rotate(310deg);
+}
+.progressBarFullArc {
+  border-color: #303038;
+  // opacity: 0.5;
+}
+
+.progressBarFullArcActive {
+  border-color: #794488;
+}
+
+.progressBarFullArcActive::after {
+  position: absolute;
+  top: 0px; bottom: 0px;
+  left: 0px; right: 0px;
+  background: linear-gradient(to top,#794488, #FD8D51);
+  content: '';
+  z-index: -1;
+  border-radius: 360px;
+}
+
+.progressBarArcEnd {
+  border-color:#794488 #794488 #794488 transparent;
+
+  transform: rotate(20deg);
+}
+
+.progressBarNumber {
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #303038;
+  
+}
+
+.progressBarNumberActive {
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #794488;
+  font-weight: bold;
+  }
+
+  .wizardContainerMobile {
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+  }
+
+  .wizardTitleMobile {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+    padding: 65px 0px 0px 20px;
+  }
+  .wizardPadding{
+    padding: 50px 50px 50px 8%;
+  }
+  .wizardMarginTop{
+    margin-top: 20px;
+    color: white;
+  }
+
+  .wizardItemContainer {
+    margin-bottom: 20px;
+  }
+  @media only screen  and (max-width: 1100px) {
+    .wizardItemContainer span {
+        font-size: 10px;
+      }
+  }
+  @media only screen  and (max-width: 850px) {
+    .wizardItem {
+      margin: 20px 0px !important;
+    }
+    .wizardItemContainerMobile {
+      margin-left: -30px;
+    }
+    .wizardItemContainerMobile span {
+      display: none;
+    }
+
+    .subtext {
+      display: block;
+      padding-top: 20px;
+    }
+
+    .progressBarComplete {
+      top: -15px;
+    }
+
+    .progressBarNumber {
+      position: relative;
+      left: 15px;
+    }
+    
+    .progressBarNumberActive {
+      position: relative;
+      left: 15px;
+    }
+
+
+    .progressBarWrapper {
+      width: 20px;
+    }
+
+    .wizardContainerMobile {
+      display: block;
+    }
+
+    .wizardContainer {
+      display: none;
+    }
+
+    .progressBarClock {
+      top: -23px !important;
+    }
+    .wizardPadding{
+      padding: 20px ;
+    }
+  }
+
+  @media only screen  and (max-width: 750px) {
+    .wizardTitleMobile {
+      padding: 20px 0px 0px 20px;
+    }
+  }

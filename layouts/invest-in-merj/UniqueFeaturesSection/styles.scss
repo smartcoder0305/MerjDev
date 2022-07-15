@@ -1,0 +1,56 @@
+@import '../../../static/styles/variables.scss';
+.uniqueFeaturesWrapper {
+    margin: 1em 0;
+    padding: 1em 0 3em 0;
+    background: $primary;
+    h1 {
+        font-size: 2.3em;
+        margin-bottom: 0.8em;
+        color: $white;
+        text-transform: capitalize;
+    }
+    .investStripCTA {
+        border-top: 1px solid $bg-1;
+        color: $white;
+        section {
+            padding: 1em;
+            margin-top: 1em;
+            &>div {
+                margin: 0.5em 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .uniqueFeaturesWrapper {
+        margin: 4em 0;
+        padding: 3em 0;
+        h1 {
+            font-size: 3.5em;
+        }
+        .investStripCTA {
+            h3 {
+                font-size: 1.4em;
+            }
+            .overridesWrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .buttonsWrapper {
+                flex: 0.65;
+                button {
+                    margin: 0 0.5em 0 0;
+                }
+            }
+            section {
+                flex: 0.35;
+                margin: 0; 
+                &>div {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

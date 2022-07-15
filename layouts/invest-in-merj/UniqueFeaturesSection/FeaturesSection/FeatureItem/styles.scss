@@ -1,0 +1,41 @@
+@import '../../../../../static/styles/variables.scss';
+
+.inner {
+  margin: 0 0 2em 0;
+  h3 {
+    margin: 0.8em 0 0 0;
+    padding: 0;
+    font-size: 0.85em;
+    color: $white;
+  }
+  p {
+    font-size: 0.9em;
+    color: $white;
+  }
+  img {
+    max-width: 3em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .inner {
+    margin: 0 0 4em 0;
+    h3 {
+      font-size: 1.3em;
+    }
+    p {
+      font-size: 1em;
+    }
+    img {
+      max-width: 4em;
+    }
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .inner {
+    p {
+      font-size: 0.9em;
+    }
+  }
+}

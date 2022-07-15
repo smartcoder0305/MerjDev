@@ -1,0 +1,155 @@
+.whyMerjContainer {
+
+
+  hr {
+    margin: 20px 0px;
+        border-top: 1px solid #F4F5FA;
+  }
+
+  .InvestInMerj {
+    text-align: center;
+  border-style: groove;
+  border-color: #E2E3EF;
+  background-color: #FAFBFF;
+  border: 1px solid #EEEDF1;
+}
+
+.rightTeam {
+  position: relative;
+  top: 43px;
+  left: 33px;
+  margin-top: 50px;
+}
+
+.rightTeamContainer {
+  position: relative;
+    bottom: 28px;
+}
+
+.investWithConfidence1{
+  position: relative;
+    bottom: 15px;
+    font-size: 16px;
+}
+
+.merjBusinessContainer {
+  position: relative;
+}
+
+.investWithConfidence2{
+  position: relative;
+    bottom: 17px;
+}
+
+.merjRevenue1 {
+  position: relative;
+  bottom: 16px;
+}
+
+.img {
+  width: 110px;
+  height: 100px;
+}
+
+.investWithConfidence {
+  position: relative;
+}
+
+.TeamSection{
+  display: flex;
+  justify-content: space-between;
+}
+
+.TeamMembers{
+  width: 24%;
+}
+
+.E2EPlatform{
+  text-align: center;
+}
+.E2EPlatformImg {
+  position: relative;
+  width: 100%;
+  img {
+    width: 100%;
+    position: relative;
+    bottom: 15px;
+  }
+}
+
+.merjRevenue {
+  position: relative;
+  bottom: 37px;
+  font-size: 12px;
+}
+
+.E2EContainer {
+  position: relative;
+  bottom: 25px;
+}
+
+.merjOffers {
+  text-align: center;
+    position: relative;
+    bottom: 15px;
+    font-size: 14px;
+}
+
+
+.merjBusiness {
+  position: relative;
+    bottom: 41px;
+  
+  img {
+    width: 100%;
+  }
+
+
+  .merjBusinessDesktop {
+    display: block;
+  }
+
+  .merjBusinessMobile {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 990px) {
+  
+  .merjBusiness {
+    position: relative;
+    bottom: 25px;
+    
+    img {
+      width: 50%;
+      margin: 10px auto;
+    }
+    
+    
+    .merjBusinessDesktop {
+      display: none !important;
+    }
+  
+    .merjBusinessMobile {
+      display: block !important;
+    }
+  
+  
+  }
+  
+}
+
+
+}
+@media only screen and (max-width: 375px) {
+.investWithConfidenceImage{
+  width: 94%;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  .investWithConfidence {
+    margin: 20px;
+  }
+}

@@ -1,0 +1,88 @@
+@import '../../../static/styles/variables.scss';
+.inPageNavWrapper {
+    position: fixed;
+    top: 3em; // header height
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: $white;
+    overflow-x: auto;
+    box-shadow: 0 2px 4px 0 $border-colour;
+    z-index: 1;
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        li {
+            flex-grow: 0;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            &::before {
+                display: none;
+            }
+            button {
+                padding: 1em 0.5em 1em 1.1em;
+                font-size: 0.85em;
+                cursor: pointer;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                outline: none;
+                background: $white;
+                border: none;
+                text-align: left;
+            }
+            &.active {
+                button {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .inPageNavWrapper {
+        ul{
+            margin: 0px 0px -8px;
+            padding: 9px 28px 1px 37px;
+        }
+        top: 2.2em;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .inPageNavWrapper {
+        position: static;
+        top: auto;
+        left: auto;
+        border-right: 1px solid $border-colour;
+        margin: 0 0 0 2em;
+        width: 12em;
+        box-shadow: none;
+        ul {
+            flex-direction: column;
+            padding-right: 0.2em;
+            li {
+                width: 100%;
+                text-align: left;
+                button {
+                    padding: 0.8em 0;
+                    color: $bg-3;
+                    font-size: 0.88em;
+                }
+                &.active {
+                    button {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,665 @@
+$primary-blue: #21267a;
+$primary-yellow: #cc9900;
+$success-green: #DFF2BF;
+
+.successMsg {
+    color: #270;
+    background-color: #DFF2BF;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 9px;
+  }
+
+  .errorMsg {
+    color: #D8000C;
+    background-color: #FFBABA;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 9px;
+  }
+
+.documentTooltip {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.documentItemRow{
+    a{
+        color: $primary-blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+}
+.button {
+    text-align: center;
+    padding: 0px 1.5em;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    background: #944fa0;
+    letter-spacing: 0.1em;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: auto;
+    -moz-appearance: none;
+    margin: 8px 0;
+    outline: none;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+
+    &.white__btn{
+        background: #fff;
+        color: #000;
+        border-radius: 0px 4px 4px 0px !important;
+    }
+}
+
+.uploadButton {
+    text-align: center;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    background: #944fa0;
+    letter-spacing: 0.1em;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: auto;
+    -moz-appearance: none;
+    margin: 8px 0;
+    outline: none;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    padding-top: 10px;
+
+    &.white__btn{
+        background: #fff;
+        color: #000;
+        border-radius: 0px 4px 4px 0px !important;
+    }
+}
+
+.buttonLarge {
+    text-align: center;
+    padding: 1.2em 2.5em;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.125em;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: auto;
+    -moz-appearance: none;
+    margin: 0 0;
+    outline: none;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    padding-top: 17px; 
+
+    &.primary{
+        background: #944fa0;
+        border-radius: 2px;
+        margin-bottom: 9px;
+        height: 44px;
+        width: 150px;
+    }
+    &.white__btn{
+        background: #fff;
+        color: #000;
+        border-radius: 0px 4px 4px 0px !important;
+    }
+    &.secondary{
+        background: #15ad93;
+        border-radius: 2px;
+    }
+}
+.inline {
+    display: flex;
+    width: 99%;
+    margin-right: 108px;
+}
+
+.inlineInput {
+    margin-right: 0% !important;
+}
+
+.documentUploadContainer {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #161723;
+    border-radius: 5px;
+    color:  #fff;
+
+}
+
+.documentSubmitBtnContainer {
+    text-align: right;
+    margin-top: 20px;
+
+    button {
+        width: 115px;
+        height: 39px;
+        border-radius: 5px;
+        color: $primary-yellow;
+        border: 0px solid #212121;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #21267A;
+    }
+}
+
+.documentUploadLabel {
+    font-weight: bold;
+    font-size: 12px;
+    text-align: left;
+    margin: 10px;
+    margin-left: 0px;
+    text-transform: uppercase;
+    span {
+        font-weight: normal;
+        font-size: 10px;
+        color: #c5c5c5
+        
+    }
+} 
+
+.documentUploadLabelSpacer {
+    padding: 19px;
+} 
+
+.documentUploadTag {
+    width: 20%;
+    padding-left: 0px;
+    select {
+        border-radius: 5px;
+        background-color: #161723;
+        border-color: #161723;
+        padding: 5px;
+        width: 100%;
+    }
+}
+
+.selectDocuments{
+    background-size: 9px !important;
+    background-color: #fff;
+    color: #000;
+
+    
+}
+
+.documentVerificationStatus{
+    font-weight: bold;
+    text-align: right;
+    width: 100%;
+    display: inline-block;
+}
+h1.documentTitle{
+    width: 50%;
+    display: inline;
+}
+
+.documentUploadMessage {
+    background-color: #FFD48A;
+    border-radius: 5px;
+    color: #9A6000;
+    padding: 20px;
+    margin: 20px 20px 0px 0px;
+    font-weight: bold;
+    width: 100%;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+ul.documentsUploadTable{
+    width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.documentsOuterTitle{
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+
+    div {
+        padding: 10px;
+        border: 1px solid #fd9551;
+        text-align: center;
+        font-weight: 200;
+        background-color: #fd9551;
+        color: white;
+        font-size: 14px;
+        margin: 0px !important;
+        margin-bottom: -10px !important;
+    }
+}
+
+.documentCriteriaContainer > li {
+    list-style: none;
+
+}
+.docOnRecord {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.documentCriteriaContainer > li::before {
+    list-style: none;
+    content: "\2022";
+    color:#21267A;
+    font-weight: bold;
+    font-size: 15px;
+    display: inline-block;
+    width: 2em;
+    margin-left: -2em;
+}
+
+.documentsUploadTable li{
+    display: block;
+}
+.documentsUploadTable li> div{
+    display: block;
+    border: 0.5px solid #D1D1D1;
+    padding: 10px;
+}
+
+.documentsUploadTable .documentItem {
+    margin: 0px !important;
+    font-size: 14px;
+}
+
+.documentsUploadTable li> div > div{
+    display: inline-block;
+}
+.centerAligned {
+    text-align: center;
+    width: 100%;
+}
+.documentsUploadTable .documentsInnerTitle{
+    display: inline-block;
+    text-align: center;
+
+}
+.documentsOuterTitle > div{
+    display: inline-block;
+    width: 33%;
+    padding-left: 0%;
+}
+.documentsOuterTitle {
+    margin-bottom: 9px;
+}
+
+.documentUploadFile {
+    width: 60%;
+    margin-right: 0px; 
+    input {
+        border-radius: 5px 0px 0px 5px;
+        background-color: white;
+        border: 1px solid #D1D1D1;
+        padding: 5px;
+        width: 70%;
+    }
+
+    button {
+        background-color: white;
+        color: black;
+        border-radius: 0px 6px 6px 0px;
+        border: 1px solid #D1D1D1;
+        font-weight: bold;
+        font-size: 12px;
+        padding-bottom: 7px;
+        padding-top: 9px;
+        width: 30%;
+    }
+
+}
+.documentUpload {
+    width: 20%;
+    margin-right: 0;
+    button {
+        background-color: $primary-blue;
+        color: $primary-yellow;
+        font-weight: bold;
+        font-size: 12px;
+        border-radius: 6px;
+        border: 0px solid $primary-blue;
+        padding: 10px 10px 8px 10px;
+        width: 100%;
+    }
+}
+
+.documentUploadTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.documentsTable {
+    width: 100%;
+    thead {
+        background-color: transparent;
+        border: 1px solid #D9D9D9;
+
+        th {
+            padding: 10px;
+        border: 1px solid #D9D9D9;
+
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    tbody {
+        tr {
+            border-color: #D9D9D9;
+
+            background-color: transparent;
+            td {
+                
+            background-color: transparent;
+
+                padding: 10px !important;
+                font-size: 14px;
+                border: 1px solid #D9D9D9;
+
+            }
+        }
+    }
+}
+
+option{
+    padding: 0px 3px 2px !important;
+}
+
+@media screen and(min-width: 751px){
+    .documentsUploadTable li > div{
+        display: inline-flex;
+        width: 33%
+    }
+    .documentsUploadTable li > div > div{
+        display: inline-block;
+    }
+    .documentsUploadTable .documentsInnerTitle{
+        display: none;
+    }
+    .documentsOuterTitle{
+        display: block;
+    }
+    .documentsOuterTitle > div{
+        width: 33%;
+        padding-left: 10px;
+    }
+    .documentUpload button:hover{  
+        cursor: pointer;
+    }
+    .documentUploadFile button:hover {
+        cursor: pointer;
+    }
+}
+@media only screen and(max-width: 1350px){
+    .documentUploadLabelSpacer {
+        padding: 19px;
+    } 
+
+    .documentUploadContainer {
+        width: 90% !important;
+    }
+
+    .documentUploadTag {
+        width: 20%;
+        select {
+            width: 100%;
+        }
+    }
+    
+    .documentUploadFile {
+        width: 60%;
+        input {
+            width: 70%;
+        }
+    
+        button {
+            width: 30%;
+        }
+    }
+    
+}
+
+@media only screen and(max-width: 1200px){
+    .documentUploadLabelSpacer {
+        padding: 19px;
+    } 
+
+    .documentUploadTag {
+        width: 20%;
+        select {
+            width: 100%;
+        }
+    }
+    
+    .documentUploadFile {
+        width: 60%;
+        input {
+            width: 65%;
+        }
+    
+        button {
+            width: 35%;
+        }
+    }
+
+}
+
+
+
+
+@media only screen and(max-width: 950px){ 
+    .documentUpload {
+        width: 22%;
+    }
+
+    
+    .tagInputs{
+        width: 100%;
+    }
+        
+}
+
+
+@media only screen and(max-width: 850px){
+    .documentUploadContainer{
+        width: 100% !important;
+    }
+    .documentUploadTag {
+        width: 100%;
+        select {
+            width: 100%;
+        }
+        margin-bottom: 20px;
+    }
+    
+    .documentUploadFile {
+        width: 100%;
+        input {
+            width: 80%;
+        }
+    
+        button {
+            width: 20%;
+        }
+    }
+
+    .documentUpload {
+        width: 100%;
+    }
+    .documentUpload{
+        padding-left: 0;
+    }
+    .documentUploadTag{
+        padding-left: 0;
+    }
+    .documentUploadFile{
+        padding-left: 0;
+    }
+    .documentUploadMessage{
+        margin: 20px 0px auto 0px !important;
+        width: 100% !important
+    }
+    form{
+        ol{
+            padding-left: 15px;
+        }
+        ul{
+            padding-left: 21px;
+        }
+    }
+}
+@media screen and (max-width: 750px){
+    .documentsUploadTable li > div{
+        display: block;
+        border: unset !important;
+    }
+    .documentsUploadTable li > div > div{
+        display: inline-block;
+    }
+    .documentsUploadTable li> div > div:last-child{
+        margin-bottom: 5px;
+    }
+    .documentsOuterTitle{
+        display: none;
+    }
+
+    .documentItemRow  {
+        :first-child {
+            font-weight: bold;
+        }
+        margin-bottom: 20px;
+        div {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+
+    .documentItem {
+        border-radius: 6px;
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 1px solid #D1D1D1;
+        :last-child{
+            margin-bottom: 0px !important
+        }
+    }
+
+
+    
+    .documentVerificationStatus{
+        text-align: left;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .selectDocumentIput{
+        width: 100%;
+        button {
+            width: 100% !important;
+        }
+        
+    }
+
+    .documentsInnerTitle{
+        text-align: left !important;
+    }
+
+  
+}
+
+@media only screen and(max-width: 555px){ 
+    .documentUploadFile {
+        width: 100%;
+        input {
+            width: 75%;
+        }
+    
+        button {
+            width: 25%;
+        }
+    }
+
+
+}
+
+@media only screen and(max-width: 470px){ 
+    .documentUploadFile {
+        width: 100%;
+        input {
+            width: 70%;
+        }
+    
+        button {
+            width: 30%;
+        }
+    }
+
+}
+
+@media only screen and(max-width: 400px){ 
+    .documentUploadFile {
+        width: 100%;
+        input {
+            width: 60%;
+        }
+    
+        button {
+            width: 40%;
+        }
+    }
+    .documentItemRow {
+        overflow-wrap: break-word;
+    }
+
+
+}
+
+.uploadDocInputs{
+    
+}
+.docRecords{
+    margin-top: 24px;
+}
+.selectDocumentIput{
+    display: inline-block;
+    text-align: center;
+
+}
+.tagInputs{
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: top;
+}
+
+@media only screen and(max-width: 425px){ 
+    .tagInputs{
+        width: 100% !important;
+    }
+
+    .uploadDocInputs{
+        flex-direction: column;
+    }
+}

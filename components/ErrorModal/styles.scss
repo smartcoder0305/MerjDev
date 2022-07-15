@@ -1,0 +1,102 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(0,0,0,0.3);
+  padding: 50;
+  z-index: 2;
+}
+
+
+
+.modalWrapper{
+  background: white;
+  border: 1px solid #d0cccc;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  transition: all .08s;
+  width: 45%;
+  border-radius: 6px;
+  position: absolute;
+  left: 27.5%;
+  top: 50%;
+  height: 70%;
+  transform: translate(0px, -50%);
+}
+.modalHeader{
+   
+}
+.closeModalBtn{
+  color: white;
+    cursor: pointer;
+ 
+    background-color: #fb5231;
+    position: absolute;
+    right: -11px;
+    padding: 5px 10px;
+    top: -11px;
+    border-radius: 360px;
+}
+.closeModalBtn:hover {
+    color: gray;
+    cursor: pointer;
+  }
+.modalBody{
+    text-align: center;
+    color: black;
+    position: relative;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+
+.modalTypeText{
+  margin-top: inherit;
+    text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+.modalContent{
+  font-family: 'Arial';
+  font-weight: bold;
+  font-size: 16px;
+  margin: 8px 40px;
+  div:first-child{
+    font-weight: normal;
+  }
+  div{
+    margin-bottom: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 1050px) {
+  .modalWrapper{
+    width: 55%;
+    left: 20%;
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .modalWrapper{
+    width: 80%;
+    left: 10%;
+    height: 45%;
+  }
+
+  .modalButton {
+    button {
+      margin: 0px 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .modalWrapper{
+    width: 95%;
+    left: 2.5%;
+    height: 45%;
+  }
+}

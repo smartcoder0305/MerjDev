@@ -1,0 +1,52 @@
+.countDownContainer {
+    padding: 50px;
+    background-color: transparent;
+    margin-top: 50px; 
+}
+
+.countDownDigit {
+    background: linear-gradient(to top,#794488, #FD8D51);
+    padding: 20px 30px;
+    width: 10%;
+    text-align: center;
+    min-width: 100px;
+    // border: 1px solid black;
+    border-radius: 8px;
+    font-size: 65px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.countDownDigitContainer {
+    display: inline-block;
+    color: #c5c5c5;
+    margin: 0px 20px;
+}
+
+.countdownTitle {
+    font-weight: bold;
+    font-size: 32px;
+    padding-bottom: 50px;
+}
+
+@media only screen and(max-width: 400px){
+    .countDownContainer{
+        padding: 0px;
+    }
+    .countDownDigitContainer{
+        margin: 0px 0px;
+        margin-right: 1em;
+    }
+    .countDownDigitContainerMinutes{
+        margin-right: 0px;
+    }
+    .countDownDigit{  
+        padding: 0px 10px;
+        width: 46%;
+        min-width: 40px;
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,468 @@
+@import 'helpers.scss';
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'custom.scss';
+
+@keyframes slide-from-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes slide-from-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 0.5s linear infinite;
+}
+
+.slideInLeft {
+  animation: slide-in-left 0.33s ease;
+}
+
+.slideOutLeft {
+  animation: slide-out-left 0.33s ease;
+}
+
+.slideUp {
+  animation: slide-up 0.33s ease;
+}
+
+.fadeIn {
+  animation: fade-in 0.33s ease;
+}
+
+.animate {
+  visibility: hidden;
+}
+
+.animate.active {
+  animation: slide-up 0.33s ease;
+  visibility: visible;
+}
+
+.slidefromleft {
+  animation: slide-from-left 0.4s ease;
+  animation-delay: 0.4s;
+  visibility: visible;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome 16+, Safari 4+ */
+  -moz-animation-fill-mode: forwards;
+  /* FF 5+ */
+  -o-animation-fill-mode: forwards;
+  /* Not implemented yet */
+  -ms-animation-fill-mode: forwards;
+  /* IE 10+ */
+  animation-fill-mode: forwards;
+  /* When the spec is finished */
+}
+
+.slidefromright {
+  animation: slide-from-right 0.4s ease;
+  animation-delay: 0.4s;
+  visibility: visible;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome 16+, Safari 4+ */
+  -moz-animation-fill-mode: forwards;
+  /* FF 5+ */
+  -o-animation-fill-mode: forwards;
+  /* Not implemented yet */
+  -ms-animation-fill-mode: forwards;
+  /* IE 10+ */
+  animation-fill-mode: forwards;
+  /* When the spec is finished */
+}
+
+input:disabled {
+  background: hsl(0,0%,95%);
+}
+
+select:disabled {
+  background: hsl(0,0%,95%);
+
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  max-height: 100%;
+}
+
+.success-subtitle {  
+  font-family: 'gordita', sans-serif;
+}
+
+.login-forgot-password {
+  font-size: 0.8em ;
+  text-align: left ;
+  padding: 12px 4px ;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'gordita', sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  margin-top: 3em;
+}
+
+.paddedInner {
+  padding: 4em 3em 1em 3em;
+}
+
+//TYPOGRAPHY
+//**************************
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin: 1.8em 0 1em 0;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-top: 1em;
+}
+
+h2 {
+  font-size: 1.375em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1em;
+  margin-top: 3em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.875em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1em;
+  color: $bg-3;
+}
+
+small {
+  font-size: 0.9em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: $secondary;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: sans-serif;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  &:active,
+  &:visited {
+    color: darken($secondary, 15%);
+  }
+}
+
+img {
+  max-width: inherit;
+}
+
+blockquote {
+  border-left: 4px solid $secondary;
+  padding: 0 0 0 1.5em;
+  margin: 2em 0;
+  font-weight: 700;
+  p {
+    color: $primary;
+    font-size: 1.2em;
+    line-height: 1.2;
+    padding: 1.2em 0;
+  }
+}
+
+ul {
+  margin: 1.5em 0;
+  padding-left: 1.4em;
+  li {
+    color: $bg-3;
+    margin: 0.5em 0 1em 1em;
+    &::before {
+      content: '•';
+      display: none;
+      vertical-align: top;
+      margin-right: 0.3em;
+      color: $secondary;
+    }
+  }
+}
+
+ol {
+  margin: 1.5em 0;
+  padding-left: 1.4em;
+  counter-reset: li;
+  list-style: none;
+  li {
+    color: $bg-3;
+    margin: 0.5em 0;
+    counter-increment: li;
+    &:before {
+      content: counter(li) '.';
+      color: $secondary;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1.5em;
+      font-weight: 500;
+      margin-right: 0.2em;
+    }
+  }
+}
+
+//FORM STYLES
+//**************************
+form {
+  margin: 1.5em 0 2em 0;
+}
+
+input:not([type=checkbox]):not([type=radio]):not([type=submit]),
+select,
+textarea {
+  outline: none;
+  border: 1px solid $border-colour;
+  border-radius: 2px;
+  font-size: 1em;
+  padding: 0.3em 0.6em;
+  margin: 0.5em 0 0.5em 0;
+  min-height: 2.625em;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  &:focus {
+    border-color: $secondary;
+    box-shadow: 0 0 5px rgba(148, 79, 160, 1);
+  }
+}
+input[type=submit]{
+    border-radius: 2px;
+    font-size: 1em;
+    margin: 0.5em 0 0.5em 0;
+    min-height: 2.625em;
+}
+
+@media only screen and(max-width: $mobile){
+  input[type=submit]{
+    width: 100% !important;
+  }
+  h1 {
+    margin: 0;
+  }
+  h2 {
+    margin: 0;
+  }
+  h3 {
+    margin: 0;
+  }
+  h4 {
+    margin: 0;
+  }
+  h5 {
+    margin: 0;
+  }
+  h5 {
+    margin: 0;
+  } 
+}
+
+@media only screen and(max-width: 420px){
+  input[type=submit]{
+    width: 100% !important;
+  } 
+}
+
+input[type=checkbox] {
+  margin: 0.5em;
+  margin-left: 0;
+}
+select {
+  background: url('../images/icons/icon-select-dropdown.png') no-repeat 97% center;
+}
+
+input[type='submit'] {
+  background: $accent;
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  padding: 0.3em 1.2em;
+  width: auto;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background: lighten($accent, 5%);
+    box-shadow: none;
+  }
+  &:active {
+    background: darken($accent, 5%);
+  }
+}
+
+input[type='submit'][disabled] {
+  background: darken($white, 18%);
+  
+  cursor: default;
+}
+
+label {
+  font-weight: 700;
+  color: $primary;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+@media only screen and (min-width: $desktop) {
+  main {
+    margin-top: 5.5em;
+    min-height: calc(100vh - 370px);
+  }
+
+  h1 {
+    font-size: 2.625em;
+  }
+  h2 {
+    font-size: 2.2em;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  h5 {
+    font-size: 1.4em;
+  }
+  h5 {
+    font-size: 1.3em;
+  }
+  h6 {
+    font-size: 0.9em;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  blockquote {
+    margin: 4em auto;
+    max-width: 40em;
+    p {
+      font-size: 1.6em;
+      line-height: 1.4;
+    }
+  }
+  ul {
+    li {
+      font-size: 1em;
+    }
+  }
+  ol {
+    li {
+      font-size: 1.00em;
+    }
+  }
+}
+
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';

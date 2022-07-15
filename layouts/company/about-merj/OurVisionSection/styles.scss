@@ -1,0 +1,99 @@
+@import '../../../../static/styles/variables.scss';
+
+.ListItemMargin li {
+      margin-top: 0px !important;
+}
+
+.ourVisionWrapper {
+  background: $primary url('../../../../static/images/pages/about/about-merj/our-vision-bg.png')
+    no-repeat;
+  background-position: -4.5em -3em;
+  background-size: 18em;
+  color: $white;
+  padding: 7.6em 0 0 0;
+  h1 {
+    font-size: 2.3em;
+    margin-bottom: 0.8em;
+  }
+  p,
+  ul li {
+    color: $white;
+  }
+  p {
+    font-size: 1.1em;
+  }
+  ul {
+    margin: 3em 0;
+    padding: 0;
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0.5em 0 1.6em 0;
+      &::before {
+        content: '';
+        margin-right: 0.5em;
+        background: url('../../../../static/images/pages/about/about-merj/bullet-arrow.png')
+          no-repeat left top;
+        width: 1em;
+        height: 1em;
+        margin-top: 0.72em;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .ourVisionWrapper {
+    background-position: right -1em top -1em;
+    background-size: 42em;
+    padding: 6em 0 0 0;
+    .ourVisionIntro {
+      max-width: 45%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .ourVisionWrapper {
+    background-position: right 15% top 2em;
+    background-size: 45em;
+    padding: 6em 0 0 0;
+    .ourVisionIntro {
+      max-width: 50%;
+      h1 {
+        font-size: 4em;
+      }
+      p {
+        font-size: 1.6em;
+      }
+    }
+    ul {
+      li {
+        font-size: 1.2em;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .ourVisionWrapper {
+    background-position: right 25% top 2em;
+    background-size: 45em;
+    .ourVisionIntro {
+      max-width: 55%;
+    }
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .ourVisionWrapper {
+    background-position: right 32% top 2em;
+    .ourVisionIntro {
+      max-width: 55%;
+    }
+  }
+}
+

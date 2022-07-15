@@ -1,0 +1,28 @@
+.sectionHeader {
+    color: white;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+} 
+.licences {
+    color: white;
+    font-weight: 700;
+    font-size: 0.6em;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.3em;
+    opacity: 0.5;
+    list-style: none;
+    width: auto;
+}
+.licenceSection {
+    width: auto;
+    margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+    .licenceSection {
+        text-align: center;
+    }
+}

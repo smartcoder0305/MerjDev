@@ -1,0 +1,62 @@
+.container {
+    position: relative;
+  }
+  
+  .spinnerContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spacer {
+    height: 16px;
+  }
+
+  .legalPanelTitle{
+    font-size: 14px;
+    font-weight: 700;
+    // font-family: Arial, Helvetica, sans-serif;
+    height: 16px;
+    margin-bottom: 7px;
+  }
+  .legalPanelDetails{
+    width: 88%;
+    font-size: 12px;
+    // font-family: Arial, Helvetica, sans-serif;
+}
+.downloadsIcon {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  padding: 0;
+  width: 5% !important;
+}
+.downloadsItemsContainer {
+  margin-top: -30px;
+}
+
+.downloadsItem {
+  font-weight: bold;
+  padding: 8px;
+  border-bottom: 1px solid #D9D9D9;
+  width: 89%;
+  font-size: 14px;
+  margin-left: 8%;
+  color: #15ad93;
+
+  a{
+    color: #15ad93;
+  }
+}
+
+.iconColor{
+  fill: #794488;
+}
+

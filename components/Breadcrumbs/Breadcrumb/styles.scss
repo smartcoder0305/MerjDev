@@ -1,0 +1,32 @@
+@import '../../../static/styles/variables.scss';
+.container {
+}
+
+.container.hover {
+  cursor: pointer;
+}
+
+.text {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.secondaryText {
+  color: black;
+}
+
+.lastItemText {
+  opacity: 0.67;
+}
+
+.slashText {
+  margin: 0 5px;
+}
+
+@media only screen and (min-width: $desktop) {
+  .container {
+    margin: 1.2em 0 0 0;
+  }
+}

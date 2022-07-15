@@ -1,0 +1,99 @@
+.investTable {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0px;
+    box-sizing: content-box;
+    table.investTable {
+        width: 100%;
+        overflow-x: scroll;
+        border-spacing: 0px;
+    }
+
+    tr {
+        th {
+            font-weight: bold;
+            background-color: #FD734E;
+            padding: 10px 10px;
+            border: none;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        td {
+            text-align: center;
+            padding: 5px;
+        }
+
+        td:not(:first-of-type) {
+            width: auto !important;
+        }
+
+
+    }
+
+    tbody {
+        border: 1px solid #E1E1E1;
+
+        tr:nth-child(even) {
+            background-color: #f5f5f5 !important;
+        }
+
+        tr td:first-child {
+            text-align: left;
+            padding: 10px 10px;
+            border-top: 1px solid #E1E1E1;
+            border-left: 1px solid #E1E1E1;
+        }
+
+        tr:last-child td {
+            border-bottom: 1px solid #E1E1E1;
+        }
+
+        tr td:last-child {
+            border-right: 1px solid #E1E1E1;
+        }
+
+        tr td {
+            white-space: pre-line;
+            border-top: 1px solid #E1E1E1;
+            border-left: 1px solid #E1E1E1;
+        }
+    }
+
+    tr td {
+        color: black;
+    }
+
+    .tableDualHeading {
+        th {
+            background-color: white;
+        }
+    }
+}
+
+.imageHeader{
+    border: 1px solid #E1E1E1 !important;   
+    img {
+        margin: 0em 0em !important;
+    }
+}
+
+.borderless {
+    border: 0px solid;
+}
+
+.clearCell {
+    background-color: white !important;
+    border: none !important;
+}
+
+
+@media only screen and (max-width: 785px) {
+    .investTable {
+        max-width: 750px;
+        overflow: scroll;
+
+    }
+}

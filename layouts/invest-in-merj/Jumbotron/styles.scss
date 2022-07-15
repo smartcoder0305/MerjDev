@@ -1,0 +1,155 @@
+@import '../../../static/styles/variables.scss';
+.container {
+    background: url('/static/images/pages/invest-in-merj/invest-hero-banner.png') no-repeat center center;
+    background-size: cover;
+    background-color: $primary;
+    color: $white;
+    overflow: hidden;
+    p {
+        color: $white;
+    }
+    .Intro {
+        position: relative;
+        padding: 0 0 0 1.5em;
+        margin: 1.5em 0;
+        top: 29px;
+        &::before {
+            content: '';
+            width: 0.35em;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: $accent-1;
+            background: -moz-linear-gradient(45deg, $accent-1 0%, $buzz 100%);
+            background: -webkit-linear-gradient(45deg, $accent-1 0%, $buzz 100%);
+            background: linear-gradient(45deg, $accent-1 0%, $buzz 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$accent-1, endColorstr=$buzz, GradientType=1);
+        }
+        h1 {
+            font-size: 1.5em;
+            font-weight: 900;
+            margin: 0 0;
+            padding: 0;
+            text-transform: uppercase;
+        }
+        p {
+            margin: 0 0;
+            padding: 1em 0 0 0;
+        }
+    }
+    .innerBox {
+        background: $primary;
+        border: 1px solid $bg-1;
+        box-shadow: 0 0 15px 0 rgba(148, 79, 160, 0.4);
+        border-radius: 6px;
+        .investActionsWrapper {
+            .title {
+                border-bottom: 1px solid $bg-1;
+                padding: 1em;
+                text-transform: uppercase;
+                font-size: 0.8em;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+            }
+            .buttonsWrapper {
+                padding: 1em 1em 0 1em;
+                text-align: center;
+                .associationOverrides>section {
+                    justify-content: center;
+                    margin: 1em 0 0 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding-bottom: 1em;
+        .Intro {
+            h1 {
+                font-size: 2.2em;
+            }
+            p {
+                font-size: 1.1em;
+                max-width: 40em;
+            }
+        }
+    }
+    .row {
+        display: flex;
+    }
+    .column {
+        flex: 1;
+    }
+    .spacer {
+        flex: 0.2;
+    }
+}
+
+@media only screen and (min-width: 996px) {
+    .container {
+        padding-bottom: 2em;
+        .Intro {
+            padding: 0 0 0 3em;
+            margin: 2.5em 0 4em 0;
+            &::before {
+                width: 0.4em;
+            }
+            h1 {
+                font-size: 4em;
+                margin-right: 1em;
+            }
+            p {
+                font-size: 1.25em;
+            }
+        }
+        .innerBox {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            position: relative;
+            .countdownWrapper,
+            .investActionsWrapper {
+                flex: 1;
+                flex-grow: 1;
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                .title {
+                    flex-basis: 10%;
+                    padding: 1.5em;
+                    font-size: 0.9em;
+                    border-top: 1px solid $bg-1;
+                }
+                .buttonsWrapper {
+                    flex: 1;
+                }
+            }
+            .investActionsWrapper {
+                border-left: 1px solid $bg-1;
+                .buttonsWrapper {
+                    .associationOverrides>section {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        .innerBox {
+            flex-direction: row;
+            .countdownWrapper,
+            .investActionsWrapper {
+                .title {
+                    border-top: none;
+                }
+            }
+        }
+    }
+}

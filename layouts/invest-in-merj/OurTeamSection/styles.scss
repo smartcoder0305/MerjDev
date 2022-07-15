@@ -1,0 +1,24 @@
+@import '../../../static/styles/variables.scss';
+
+.ourTeamWrapper {
+  h1 {
+    font-size: 2.3em;
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ourTeamWrapper {
+    h1 {
+      font-size: 2.8em;
+    }
+  }
+}
+@media only screen and (min-width: 996px) {
+  .ourTeamWrapper {
+    margin-top: 3em;
+    h1 {
+      font-size: 3.5em;
+    }
+  }
+}

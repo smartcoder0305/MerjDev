@@ -1,0 +1,17 @@
+.wrapper {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+
+.container {
+  left: 50%;
+  top: 50%;
+  height: 80vh;
+  width: 80vw;
+  position: absolute;
+  transform: translate3d(-50%, -50%, 0);
+  border: none;
+}

@@ -1,0 +1,297 @@
+.formWrapper {
+  background: transparent;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+ .faqTitle {
+  margin-bottom: -25px;
+  margin-top: 20px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+ .openIcon {
+  float: right;
+  padding-right: 20px;
+  padding-top: 14px;
+ }
+
+ .openIcon:hover {
+   cursor: pointer;
+ }
+
+ .closeIcon:hover {
+   cursor: pointer;
+ }
+
+ 
+.faqHeader {
+text-align: center;
+padding: 20px;
+background-color: white;
+}
+
+.faqHeaderTitle {
+margin-bottom: 20px;
+font-size: 40px;
+font-weight: bold;
+}
+.contentParagraphFaq {
+width: 60%;
+margin: 0 auto;
+}
+
+.faqItem {
+  padding: 10px 20px;
+  border-radius: 9px;
+  background: linear-gradient(to right,rgba(253, 149, 81, 1), rgba(121, 68, 136, 1));
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.faqItem div {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.faqItem p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  color: white;
+}
+
+.faqItem:hover {
+cursor: pointer;
+}
+
+
+.faqItemActive {
+  border-radius: 9px 9px 0px 0px !important;
+  padding: 10px 20px;
+  border-radius: 9px;
+  background-color: #794488;
+  font-weight: bold;
+  font-size: 16px;
+  
+  }
+  
+  .faqItemActive div {
+    display: inline-block;
+  margin-right: 20px;
+  font-size: 20px;
+  color: white;
+  }
+
+  
+.faqItemActive p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  color: white;
+}
+
+.slideIn {
+animation: slide-in 0.5s forwards;
+-webkit-animation: slide-in 0.5s forwards;
+}
+
+.slideOut {
+animation: slide-in 0.5s forwards;
+-webkit-animation: slide-in 0.5s forwards;
+}
+
+.faqItemContent {
+  background-color: white;
+  padding: 50px;
+  border-radius: 0px 0px 9px 9px;
+  border: 2px solid #794488;
+  color: #794488;
+  margin-bottom: 5px;
+
+
+
+}
+
+.faqItemContent div ul li {
+  color: #794488;
+}
+
+.faqItemContent a {
+  color: #794488;
+  font-weight: bold;
+}
+
+.closeIcon {
+float: right;
+padding: 20px;
+}
+
+.faqIndexSpacing {
+  background-color: white;
+  border-radius: 6px;
+}
+
+
+.faq {
+
+  td:not(:first-of-type) {
+    width: auto !important;
+  }
+
+  thead tr th {
+    padding: 5px 0px;
+    color: white;
+    background-color: #794488;
+    width: 30%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+
+  
+  }
+
+  thead tr {
+      :first-child {
+        border-left:  1px solid #794488;
+      }
+
+      :last-child {
+        border-right: 1px solid #794488;
+      }
+  }
+
+  td {
+    border: 1px solid;
+    white-space: unset !important;
+    color: black;
+    li {
+      color: black;
+
+    }
+  }
+
+
+  table.faq {
+    overflow: visible;
+    height: auto !important;
+    display: block;
+  }
+
+  tr:nth-child(even) {
+    
+    :first-child {
+      border-left: 1px solid black !important;
+
+    }
+    :last-child {
+      border-right: 1px solid black !important;
+
+
+      ul {
+        border-width: 0px !important;
+        border: 0px solid black !important;
+        li {
+          border-width: 0px !important;
+          border: 0px solid black !important;
+        }
+
+      
+      }
+    }
+
+    td {
+      color: white;
+  
+    }
+
+    td ul li {
+      color: white;
+    }
+
+  }
+
+
+
+  tr:nth-child(odd) {
+
+
+    td {
+      color: black;
+  
+    }
+
+    td ul {
+      color: black;
+      border: none;
+    }
+
+  }
+
+}
+
+
+
+.iconSmall {
+  display: inherit;
+  width: 17px;
+  position: relative;
+  height: 17px;
+}
+
+.loader {
+  width: 100%;
+}
+
+.loader div {
+  margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .faqItemContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0px 0px 9px 9px;
+    border: 2px solid #794488;
+    color: #794488;
+    margin-bottom: 5px;
+  
+  
+  }
+
+
+
+  .faq {
+    thead tr th {
+      width: 100% !important;
+    }
+
+    table.faq {
+      overflow: scroll;
+
+  
+    }
+
+    td {
+     white-space: nowrap !important;
+    }
+
+    
+    td:not(:first-of-type) {
+    }
+
+
+  }
+}

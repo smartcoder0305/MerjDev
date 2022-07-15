@@ -1,0 +1,140 @@
+@import '../../static/styles/variables.scss';
+.articleSnippetWrapper {
+    margin: 1.5em 0;
+    border-bottom: 1px solid $border-colour;
+    padding: 0 0 1.5em 0;
+    .meta {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .categoryTag {
+            background: $newsgeneral;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 0.2em 0.6em;
+            font-size: 0.8em;
+            display: inline-block;
+            border-radius: 2px;
+            margin-right: 0.8em;
+            cursor: pointer;
+        }
+        .buzzCategoryTag {
+            background: $buzz;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 0.2em 0.6em;
+            font-size: 0.8em;
+            display: inline-block;
+            border-radius: 2px;
+            margin-right: 0.8em;
+
+        }
+        .communityCategoryTag {
+            background: $community;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding: 0.2em 0.6em;
+            font-size: 0.8em;
+            display: inline-block;
+            border-radius: 2px;
+            margin-right: 0.8em;
+        }
+        .metaDate {
+            font-size: 1em;
+            color: $grey-dark;
+            font-weight: 700;
+        }
+    }
+    .articleSnippetLink {
+        font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: underline;
+        cursor: pointer;
+        .articleSnippetLinkIcon {
+            font-size: 1.2em;
+            margin-left: 0.1em;
+            svg {
+                display: block;
+            }
+        }
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+}
+
+.title {
+    line-height: 1.25;
+    font-size: 2.2em;
+    font-weight: 700;
+    &.relatedArticleTitle {
+        font-size: 1.2em;
+    }
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.articlePageWrapper {
+    border: none;
+    margin: 0 0 2em 0;
+    padding: 2em 0 0 0;
+    border-top: 1px solid $border-colour;
+}
+
+.articlePageTitle {}
+
+@media only screen and (min-width: 768px) {
+    .articleSnippetWrapper {
+        margin: 3em 0;
+        padding: 0 0 3em 0;
+        .meta {
+            .categoryTag {
+                font-size: 0.9em;
+            }
+            .buzzCategoryTag {
+                font-size: 0.9em;
+            }
+        }
+        .articleSnippetLink {
+            font-size: 1.1em;
+            cursor: pointer;
+            .articleSnippetLinkIcon {
+                margin-top: 0.1em;
+            }
+        }
+    }
+    .title {
+        font-size: 2.2em;
+        min-height: 69px; // FIXME: This was added as a quick fix to make equal height items but we should use flex to do that
+    }
+    .articlePageWrapper {
+        margin: 0 0 2em 0;
+        padding: 2em 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .articlePageTitle {
+        font-size: 4em;
+    }
+    .title {
+        font-size: 2.2em;
+        margin-top: 0.8em;
+        &.relatedArticleTitle {
+            font-size: 2.2em; 
+            margin-top: 0.8em;
+            
+        }
+    }
+}

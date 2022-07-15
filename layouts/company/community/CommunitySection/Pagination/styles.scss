@@ -1,0 +1,53 @@
+@import '../../../../../static/styles/variables.scss';
+//
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3em;
+}
+
+.container div {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  padding: 0.4em 0.7em;
+  background-color: $white;
+  border: 1px solid $border-colour;
+  border-radius: 2px;
+  font-family: 'Gordita';
+  font-weight: 500;
+  font-size: 1em;
+  margin: 0.2em;
+  color: #3d444e;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $primary;
+    color: $white;
+    border-color: $primary;
+  }
+}
+
+.active {
+  background-color: $primary;
+  color: $white;
+  border-color: $primary;
+}
+
+.ellipsis {
+  font-family: 'Gordita';
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 5px; // the rest comes from the button
+  margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .button {
+    padding: 0.6em 0.9em;
+    font-size: 1.15em;
+  }
+}

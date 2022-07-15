@@ -1,0 +1,79 @@
+@import '../../../../static/styles/variables.scss';
+.relatedDocsWrapperMobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $lightgrey;
+    z-index: 1;
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1em;
+        background: $lightgrey;
+        border-top: 1px solid $border-colour;
+        border-bottom: 1px solid $border-colour;
+        border-left: none;
+        border-right: none;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        outline: none;
+        .buttonLabel {
+            font-size: 0.7em;
+            font-weight: 500;
+            color: $primary;
+            font-size: 1.15em;
+            font-weight: 700;
+            span {
+                font-weight: 400;
+                color: $primary;
+            }
+        }
+        svg {
+            font-size: 1.8em;
+        }
+    }
+    .documentsContainer {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s ease;
+        margin: 0 1em;
+        padding: 0;
+        list-style: none;
+        li {
+            &::before {
+                display: none;
+            }
+            a {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                font-weight: 400;
+                margin: 0.6em 0;
+                svg {
+                    margin-right: 0.4em;
+                }
+            }
+        }
+    }
+}
+
+.icon {
+    transform: rotate(-90deg);
+    transition: transform 0.5s ease;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+@media screen and (min-width: $desktop) {
+    .relatedDocsWrapperMobile {
+        display: none;
+    }
+}

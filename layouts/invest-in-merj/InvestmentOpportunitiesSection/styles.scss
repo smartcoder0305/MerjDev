@@ -1,0 +1,77 @@
+@import '../../../static/styles/variables.scss';
+.investmentOpWrapper {
+    margin: 1em 0;
+    padding: 1em 0 3em 0;
+    background: url('../../../static/images/pages/background-pattern.jpg');
+    h1 {
+        font-size: 2.3em;
+        margin-bottom: 0.8em;
+        text-transform: capitalize;
+    }
+    .investStripCTA {
+        border-top: 1px solid $grey;
+        color: $black;
+        section {
+            background-color: rgba($black, 0.3);
+            padding: 1em;
+            margin-top: 1em;
+            &>div {
+                margin: 0.5em 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .investmentOpWrapper {
+        margin: 2em 0;
+        h1 {
+            font-size: 2.8em;
+        }
+        .investStripCTA {
+            padding: 2em 0 0 0;
+            .overridesWrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .buttonsWrapper {
+                flex: 0.65;
+                button {
+                    margin: 0 0.5em 0 0;
+                }
+            }
+            section {
+                flex: 0.35;
+                margin: 0;
+                &>div {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 996px) {
+    .investmentOpWrapper {
+        margin: 4em 0;
+        padding: 3em 0;
+        h1 {
+            font-size: 3.5em;
+        }
+        .investStripCTA {
+            h3 {
+                font-size: 1.4em;
+            }
+            .overridesWrapper {}
+            .buttonsWrapper {
+                flex: 0.65;
+                button {}
+            }
+            section {
+                flex: 0.35;
+                &>div {}
+            }
+        }
+    }
+}

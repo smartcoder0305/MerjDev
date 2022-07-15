@@ -1,0 +1,28 @@
+@import '../../../static/styles/variables.scss';
+
+.subsribeFormSection {
+  h1 {
+    font-size: 2.3em;
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .subsribeFormSection {
+    text-align: center;
+    h1 {
+      font-size: 2.8em;
+      & + div {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 996px) {
+  .subsribeFormSection {
+    h1 {
+      font-size: 3.5em;
+    }
+  }
+}

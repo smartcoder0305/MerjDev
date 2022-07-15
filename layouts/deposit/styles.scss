@@ -1,0 +1,171 @@
+@import '../../static/styles/variables.scss';
+.contactWrapper {
+    margin-bottom: 2em;
+    max-width: 41em;
+    margin: 0 auto;
+    .left {
+      background: transparent;
+    }
+    .right {
+      background: transparent;
+    }
+  }
+  .bitContainer{
+    display: block;
+    margin: 10px auto;
+  }
+  .hiddenButton{
+    display: none;
+  }
+  .bitItem{
+    display: inline;
+  }
+
+  .depositInfo {
+    font-size: 12px;
+  }
+  .depositInfoLink {
+    text-decoration: underline;
+    font-size: 12px;
+  }
+  .currencyDropDown {
+    margin-top: 20px;
+  }
+  .bitPayButtonContainer{
+    width: 250px;
+    margin-left: -9px;
+  }
+      input.bitPayButton{
+        border: none !important;
+      }
+      .onPressed {
+        width: 250px;
+        margin-left: -9px;
+        opacity: 0.3; 
+      }
+
+  
+  .depositHeading{
+    font-size: 22px;
+  }
+
+  .depositSmallText{
+    font-size: 16px;
+    opacity: 0.5;
+  }
+
+  .radioContainer{
+      margin-top: 27px;
+  }
+
+  .radioInputs{
+    margin-right: 27px;
+    display: inline;
+  }
+
+  .eftDataContainer{
+    padding: 0px 0px 35px 0px;
+    border-radius: 6px;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .eftDataRows{
+    border-bottom: 1px solid #e1e1e1;
+    padding: 20px 0px;
+    .eftDataTitles{
+      font-weight: bold;
+    }
+    div {
+        display: inline;
+    }
+
+    div:last-child {
+        float: right;
+        text-align: left;
+        
+    }
+  }
+  
+  .btn {
+    text-align: center;
+    padding: 1em 1.5em;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 700;
+    background: $accent;
+    width: 100%;
+    letter-spacing: 0.1em;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0.2em 0;
+    outline: none;
+    transition: all 0.25s ease;
+    &:hover,
+    &:focus {
+      background: lighten($accent, 3%);
+      transition: all 0.35s ease;
+    }
+    &:active {
+      background: darken($accent, 5%);
+    }
+  } 
+
+  a.btn,
+  a.btn:active,
+  a.btn:visited {
+    color: $white;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+@media only screen and(max-width: $mobile){
+  .mobileScreen{
+     
+  }
+  .radioContainer{
+    margin-top: 27px;
+    text-align: center;
+}
+
+
+  .eftDataRows{
+    border: none !important;
+  
+    .eftDataTitles{
+      margin-bottom: 10px;
+    }
+    div {
+        display: block;
+        width: 100%;
+        overflow-wrap: break-word;
+    
+    }
+
+    div:last-child {
+        float: left;
+        text-align: left;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #e1e1e1;
+        
+    }
+  }
+
+}
+
+@media only screen and(max-width: 388px) {
+  
+  .radioInputs {
+    border-spacing: 5px;
+    margin-right: 27px;
+    display: table;
+  }
+  
+}

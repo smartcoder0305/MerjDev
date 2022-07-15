@@ -1,0 +1,34 @@
+@import '../../../../static//styles/variables.scss';
+
+.ourBackgroundWrapper {
+  margin-bottom: 2em;
+  .right {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .ourBackgroundWrapper {
+    .ourBackgroundInner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        padding: 0 3em 0 0;
+        flex: 1;
+      }
+      .right {
+        flex: 0.7;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $mobile){
+  .ourBackgroundWrapper{
+    margin-top: 30px;
+    margin-bottom: 0em;
+  }
+}

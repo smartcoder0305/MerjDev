@@ -1,0 +1,90 @@
+@import '../../static//styles/variables.scss';
+
+.Page {
+  margin-top: 72px;
+  position: relative; 
+}
+
+.navContainer {
+  align-self: flex-start;
+  left: 0; 
+}
+
+.pageTabsContentContainer {
+  img {
+    margin: 1em 0;
+  }
+}
+
+.pageTabPadInner {
+  position: relative;
+  left: 23%;
+  top: -50px;
+  width: 55%;
+}
+
+.documentsContainer {
+  align-self: flex-start;
+  right: 0; 
+}
+
+.fixed {
+  position: fixed;
+}
+
+
+@media screen and (max-width: $mobile) {
+  .navContainer,
+  .documentsContainer {
+    min-width: auto;
+    left: auto;
+    right: auto;
+    align-self: auto;
+  }
+  .contentContainer {
+    margin-top: -5em;
+  }
+  .pageTabPadInner {
+    position: relative;
+    left: 5%;
+    width: 90%;
+  }
+  .pageTitle{
+    margin-left: 0;
+  }
+
+
+}
+
+
+
+
+@media screen and (min-width: $desktop) {
+  .Page {
+    display: flex;
+  }
+  
+  .pageTitle{
+    margin-left: 10%;
+  }
+
+}
+
+@media screen and (min-width: 1480px) {
+  .navContainer {
+    left: auto;
+    right: 80%;
+  }
+  .documentsContainer {
+    left: 78%;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .navContainer {
+    right: 70%;
+  }
+  .documentsContainer {
+    left: 68%;
+  }
+}

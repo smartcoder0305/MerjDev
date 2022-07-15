@@ -1,0 +1,421 @@
+@import '../../static/styles/variables.scss';
+.Oiculogo {
+  max-width: 127px;
+  background-color:white;
+}
+
+.Oecdlogo {
+  position: relative;
+  background-color: white;
+  width: 82% !important;
+}
+
+.IMFlogo {
+  position: relative;
+  background-color: white;
+  width: 82% !important;
+  height: 49% !important;
+}
+
+.FATFlogo {
+  position: relative;
+  background-color: white;
+  width: 90% !important;
+  height: 49% !important;
+}
+
+.FSAlogo {
+  position: relative;
+  background-color: white;
+  width: 99% !important;
+  height: 49% !important;
+}
+
+.footer {
+  background: $primary;
+  section {
+    .sectionHeader {
+      color: $white;
+      font-weight: 700;
+      font-size: 0.8em;
+      letter-spacing: 0.1em;
+      margin: 0.5em 0;
+      text-transform: uppercase;
+    }
+    .partnersSectionHeader{
+      margin-bottom: -0.5em;
+    }
+  }
+  .footerNavWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0.5em 0;
+    section:first-child {
+      flex-basis: 100%;
+      ul {
+        max-width: 42em;
+      }
+    }
+    section {
+      flex-basis: 15em;
+      ul {
+        list-style: none;
+        margin: 0.6em 0;
+        padding: 0;
+        &.megaNav {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          li {
+            flex-basis: 9em;
+            flex-grow: 2;
+            flex-shrink: 1;
+            margin: 0.35em 0;
+            &:before {
+              display: none !important;
+            }
+            .categoryHeader {
+              color: $border-colour;
+              font-weight: 500;
+              margin: 0.5em 0;
+              cursor: default;
+            }
+            div {
+              color: $grey;
+              font-size: 0.86em;
+              cursor: pointer;
+              &:hover,
+              &:focus {
+                color: $white;
+              }
+            }
+          }
+        }
+        &.simpleNav {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: flex-start;
+          font-size: 0.86em;
+          margin-bottom: 1.5em;
+          li {
+            margin: 0.15em 0;
+            flex-basis: auto;
+            flex-grow: 0;
+            flex-shrink: 0;
+            &:before {
+              display: none !important;
+            }
+          }
+        }
+      }
+    }
+    .supportSectionWrapper {
+      li {
+        color: $grey;
+        font-size: 0.8em;
+        margin: 0.5em 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        &:before {
+          display: none !important;
+        }
+        svg {
+          display: block;
+          margin-right: 0.5em;
+        }
+        a {
+          text-decoration: none;
+          color: $grey;
+          font-weight: 400;
+        }
+        &:hover,
+        &:focus {
+          color: $white;
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .socialSectionWrapper {
+    text-align: center;
+    min-width: 25%;
+    .iconsWrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 17em;
+      margin: 1em auto;
+      a {
+        margin: 0.3em;
+      }
+    }
+  }
+  .merjBrand {
+    text-align: center;
+    img {
+      margin: 1em 0;
+    }
+  }
+  .partnersSectionWrapper {
+    width: 75%;
+    float: left;
+  }
+  .partnersSection {
+    width: 45%;
+    text-align: left;
+    float: left;
+  }
+  .sectionHeader {
+    color: $white;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+  }
+  .utilitiesList {
+    background: $bg-2;
+    color: $grey;
+    font-size: 0.7em;
+    font-weight: 500;
+    text-align: center;
+    padding: 1em 1em 2em 1em;
+    & > div {
+      ul {
+        list-style: none;
+        margin: 0 0 1.5em 0;
+        padding: 0;
+        li {
+          margin: 0.5em 0;
+          &:before {
+            display: none !important;
+          }
+          div {
+            color: $grey;
+            cursor: pointer;
+            &:hover,
+            &:focus {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.anchor {
+  color: $grey;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .footer {
+    .footerNavWrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      section:first-child {
+        flex-basis: 100%;
+        ul {
+          max-width: 42em;
+        }
+      }
+      section {
+        flex-basis: 17.5em;
+        ul {
+          &.megaNav {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            li {
+              flex: 1;
+              flex-basis: auto;
+            }
+          }
+          &.simpleNav {
+            flex-direction: column;
+            li {
+              margin: 0.15em 0;
+            }
+          }
+        }
+      }
+    }
+    .socialSectionWrapper {
+      float: left;
+      text-align: left;
+      .iconsWrapper {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        max-width: 100%;
+        margin: 1em auto;
+        a {
+        }
+      }
+    }
+    .merjBrand {
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 7.5em;
+      }
+      section {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    }
+    
+    .utilitiesList {
+      text-align: left;
+      padding: 0;
+      & > div {
+        max-width: 109em;
+        padding: 2em 0 !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          margin: 0;
+          li {
+            margin: 0.5em 0.5em 0.5em 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+  .footer {
+    padding-top: 2em;
+    .footerNavWrapper {
+      flex-wrap: nowrap;
+      section {
+        ul {
+          li {
+            .categoryHeader {
+              font-size: 0.95em !important;
+            }
+            div {
+              font-size: 0.85em !important;
+            }
+          }
+          &.simpleNav {
+            margin-top: 1.4em;
+          }
+        }
+      }
+      .supportSectionWrapper {
+        margin-top: 1.4em !important;
+      }
+    }
+    .utilitiesList {
+      & > div {
+        ul {
+          li {
+            margin: 0.5em 1em 0.5em 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .Oiculogo {
+    background-color: white;    
+    max-width: 127px;
+  }
+  
+  .Oecdlogo {
+    position: relative;
+    background-color: white;
+    right: 0%;
+    max-width: 153px;
+  }
+  
+  .IMFlogo {
+    position: relative;
+    background-color: white;
+    right: 0%;
+    max-width: 127px;
+  }
+  
+  .FATFlogo {
+    position: relative;
+    background-color: white;
+    right: 0%;
+    max-width: 127px;
+  }
+  
+  .FSAlogo {
+    position: relative;
+    background-color: white;
+    right: 0%;
+    max-width: 127px;
+  }
+
+  .partnersSectionWrapper {
+      width: 100% !important;
+    }
+    .partnersSection {
+      width: 100% !important;
+      text-align: center !important;
+      float: right;
+      justify-content: center;
+    }
+    .merjBrandSeperator {
+      margin: auto;
+      height: 75px;   
+      width: 365px !important;
+    }
+    .merjBrandSeperator2 {
+      width: 183px !important;
+      margin: auto;
+      height: 105px;
+    }
+
+    .footerLogo1 {
+      max-width: 105px !important;
+      margin: 0 0 0 90px;
+      float: left; 
+    }
+    .footerLogo2 {
+      max-width: 153px !important;
+      float: left; 
+    }
+
+
+    .footer.socialSectionWrapper .iconsWrapper{
+      max-width: 18em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+  .footerLogo1 {
+    margin: 0 0 0 50px;
+
+  }
+}

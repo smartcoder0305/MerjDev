@@ -1,0 +1,45 @@
+@import '../../../../static/styles/variables.scss';
+.keyComponentSingle {
+  background: $primary;
+  padding: 1.2em;
+  margin: 0 0 1em 0;
+  border-radius: 6px;
+  height: 100%;
+  .title {
+    color: $white;
+    font-weight: 700;
+    font-size: 1.3em;
+    position: relative;
+    padding: 0 0 0 0.8em;
+    margin: 0.3em 0 0 0;
+    &::before {
+      content: '';
+      width: 0.2em;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $accent-1;
+      background: -moz-linear-gradient(45deg, $accent-1 0%, $buzz 100%);
+      background: -webkit-linear-gradient(45deg, $accent-1 0%, $buzz 100%);
+      background: linear-gradient(45deg, $accent-1 0%, $buzz 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$accent-1, endColorstr=$buzz, GradientType=1);
+    }
+  }
+  p {
+    color: $white;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .keyComponentSingle {
+    padding: 2.2em;
+    .title {
+      font-size: 1.4em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+}

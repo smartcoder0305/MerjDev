@@ -1,0 +1,25 @@
+@import '../../../static/styles/variables.scss';
+
+@media only screen and (min-width: 768px) {
+  .keyPrioritiesWrapper {
+    .inner {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .single {
+        flex-basis: 48%;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 996px) {
+  .keyPrioritiesWrapper {
+    .inner {
+      .single {
+        margin-bottom: 2em;
+      }
+    }
+  }
+}

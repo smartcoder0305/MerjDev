@@ -1,0 +1,29 @@
+@import '../../static/styles/variables.scss';
+.container {
+    margin-bottom: 30px;
+    .itemsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: -16px; 
+        .itemContainer {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            margin-bottom: 16px;
+            .spacer {
+                min-width: 16px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        .itemsContainer {
+            .itemContainer {
+                width: 25%;
+            }
+        }
+    }
+}

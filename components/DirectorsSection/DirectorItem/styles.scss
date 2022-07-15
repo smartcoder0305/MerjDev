@@ -1,0 +1,41 @@
+@import '../../../static/styles/variables.scss';
+
+.directorSingle {
+  margin: 0.2em 0 1em 0;
+  .directorImage {
+    margin: 0 0 1em 0;
+    img {
+      width: 100%;
+    }
+  }
+  .directorName {
+    font-weight: 700;
+    font-size: 0.82em;
+    line-height: 1.2;
+    color: $primary;
+  }
+  .directorTitle {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    color: $grey-dark;
+    margin-bottom: 0.5em;
+  }
+  a {
+    display: block;
+    margin: 0.4em 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .directorSingle {
+    margin: 0.2em 0 1.5em 0;
+    .directorName {
+      font-size: 1em;
+    }
+    .directorTitle {
+      font-size: 0.7em;
+      margin-bottom: 1em;
+    }
+  }
+}

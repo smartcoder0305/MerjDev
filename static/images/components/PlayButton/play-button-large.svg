@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="225px" height="225px" viewBox="0 0 225 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="5.8371894%" y1="-7.28226534%" x2="80.0995183%" y2="105.384138%" id="linearGradient-1">
+            <stop stop-color="#3C24E8" offset="0%"></stop>
+            <stop stop-color="#F76B1C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="HOME" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HOME-PAGE" transform="translate(-964.000000, -223.000000)" fill-rule="nonzero">
+            <g id="Group-7" transform="translate(964.000000, 223.000000)">
+                <circle id="Oval-2" fill-opacity="0.33" fill="#000000" cx="112.5" cy="112.5" r="112.5"></circle>
+                <circle id="Oval-2" stroke="url(#linearGradient-1)" stroke-width="4" cx="112.5" cy="112.5" r="105.5"></circle>
+                <polygon id="Triangle" fill="#FFFFFF" transform="translate(122.500000, 113.000000) rotate(90.000000) translate(-122.500000, -113.000000) " points="122.5 83.5 159.5 142.5 85.5 142.5"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

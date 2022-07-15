@@ -1,0 +1,144 @@
+@import '../../../../../../static/styles/variables.scss';
+.container {
+  background: $bg-2;
+  box-shadow: 0 2px 24px 0 rgba(148, 79, 160, 0.22);
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.headerText {
+  color: $white;
+  margin: 0;
+}
+
+.legendContainer {
+  display: flex;
+  align-items: center;
+}
+
+.legendText {
+  margin-left: 14px;
+  font-size: 14px;
+  color: $grey;
+}
+
+table.ExchangeTable {
+  width: 100%;
+  // display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+thead {
+  background: $bg-1;
+}
+
+thead > tr > td {
+  color: $grey;
+}
+
+tr {
+  padding: 8px 12px;
+}
+
+tr:nth-child(even) {
+  background: $bg-1;
+}
+
+table.ExchangeTable {
+  overflow: hidden !important;
+}
+
+.ExchangeTable tbody tr:nth-child(even) {
+  td {
+    color: white;
+    background: $bg-1;
+    padding: 8px 12px;
+    border: none;
+  }
+}
+
+.ExchangeTable tbody tr:nth-child(odd) {
+  td {
+    border: none;
+    color: white;
+    //background: $bg-1;
+    padding: 8px 12px;
+  }
+}
+
+.ExchangeTable thead tr td {
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+td {
+  color: $white;
+  text-align: left;
+  font-size: 14px;
+  white-space: nowrap;
+  padding: 8px 12px;
+}
+
+td:not(:first-of-type) {
+  width: 100%;
+}
+
+a,
+a:active,
+a:visited {
+  color: $secondary;
+  text-decoration: underline;
+  font-weight: 400;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.priceIconNeutral {
+  color: gray;
+}
+
+.priceIconUp {
+  transform: rotate(-90deg);
+  color: green;
+}
+
+.priceIconDown {
+  transform: rotate(90deg);
+  color: red;
+}
+
+.tokenSecurityColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+}
+
+.footerContainer {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerText {
+  margin: 0;
+  color: $grey;
+}
+
+
+@media only screen and (max-width: 750px) {
+  .ExchangeTable {
+    overflow-x: scroll !important;
+  }
+}

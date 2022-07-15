@@ -1,0 +1,99 @@
+@import '../../../../static/styles/variables.scss';
+.DealSummary {
+    margin-left: 10%;
+    width: 100%;
+    .videoContentContainer {
+        text-align: center;
+        padding-top: 50px;
+        background-color:#FAFBFE;
+        border: 1px solid #E9EAEC;
+        .title {
+            font-weight: bold;
+            font-size: 32px;
+            margin-bottom: 20px;
+
+        }
+
+        .subtext {
+            margin-bottom: 20px;
+
+        }
+
+        .videoContainer {
+            iframe {
+                width: 90%;
+                margin: 20px auto;
+                height: 350px;
+            }
+        }
+    }
+    .DealSummaryOpeningHeader{
+            color: #5352BA;
+            padding-left: 6em;
+            margin-block-end: 0px;
+    }
+   
+}
+@media only screen and (max-width: $mobile) {
+    .DealSummary{
+        margin-left: 0;
+        .DealSummaryOpeningHeader{
+            color: #5352BA;
+            padding-left: 1.2em;
+            margin-block-end: 0px;
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .DealSummary{
+        .DealSummaryOpeningHeader{
+            color: #5352BA;
+            padding-left: 1em;
+            padding-top: 1em;
+            margin-block-end: 0px;
+        }
+    }
+}
+.downloadsContainer {
+    background: #FAFBFF;
+      padding: 20px;
+      font-weight: bold;
+      width: 70%;
+      border: 1px solid #F0F1F5;
+      margin: 50px auto;
+      a{
+        text-decoration: none;
+      }
+      
+  }
+
+  .downloadsItem {
+    padding: 20px;
+    background: linear-gradient(to right,#FD734E, #794488);;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: white;
+    font-weight: bold;
+    a{
+      text-decoration: none;
+    }
+        span {
+            float: right;
+        }
+
+  }
+  
+  .downloadsTitle {
+    font-size: 25px;
+    padding-bottom: 20px;
+    a{
+      text-decoration: none;
+    }
+  }
+
+  .line{
+      border-bottom: 1px solid #e3e3ef;
+  }
+

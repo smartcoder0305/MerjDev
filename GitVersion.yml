@@ -1,0 +1,21 @@
+branches:
+  master:
+    mode: ContinuousDelivery
+    tag: ''
+    increment: Patch
+  releases?[/-]:
+    mode: ContinuousDeployment
+    tag: release
+  features?[/-]:
+    mode: ContinuousDeployment
+    tag: feature-{BranchName}
+    increment: Inherit
+  hotfix(es)?[/-]:
+    mode: ContinuousDeployment
+    tag: hotfix-{BranchName}
+    increment: Patch
+  develop:
+    mode: ContinuousDeployment
+    tag: develop
+ignore:
+  sha: []

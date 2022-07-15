@@ -1,0 +1,58 @@
+@import '../../../../static/styles/variables.scss';
+.ExecutiveSummary {
+    margin-left: 10%;
+    width: 100%;
+    .ExecutiveSummaryParagraph{
+        border: 1px solid #E9EAEC;
+        width: 50%;
+        font-size: 14px;
+        padding: 50px 30px;
+        background-color: #FAFBFF;
+    }
+    .ExecutiveSummaryImage{
+        background-image: url('../../../../static/images/pages/invest-in-merj/ExecutiveSummary.jpg');
+        height: auto;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .ExecutiveSummaryContainer{
+        display: flex   
+    }
+
+    .introContainer {
+
+    }
+
+    .SecondaryContainer{
+        padding: 51px 70px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .ExecutiveSummaryContainer{
+        display: block !important;
+    }
+
+    .ExecutiveSummaryImage{
+        height: 400px !important;
+        width: 100% !important;
+    }
+    
+    .ExecutiveSummaryParagraph{
+        width: 100% !important;
+        padding: 20px 20px 20px 20px !important;
+        font-size: 15px !important;
+    }
+}
+@media only screen and (max-width: $mobile){
+    .ExecutiveSummary{
+        margin-left: 0;
+        .SecondaryContainer{
+            padding: 51px 0px !important;
+        }
+    }
+}

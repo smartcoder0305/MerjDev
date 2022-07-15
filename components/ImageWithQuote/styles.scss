@@ -1,0 +1,27 @@
+@import '../../static/styles/variables.scss';
+.quoteBanner {
+    background: url('/static/images/components/ImageWithQuote/banner-quote.jpg') no-repeat center center;
+    background-size: cover;
+    color: $white;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 3em 0;
+    .inner {
+        max-width: 30em;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+    .quoteBanner {
+        padding: 8em 0;
+        font-size: 2em;
+        line-height: 1.5;
+        .inner {}
+    }
+}
+@media only screen and (max-width: $mobile){
+    .quoteBanner{
+        margin-top: 30px;
+    }
+}

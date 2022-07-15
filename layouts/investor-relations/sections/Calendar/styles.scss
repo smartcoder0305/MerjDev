@@ -1,0 +1,39 @@
+@import '../../../../static/styles/variables.scss';
+.CalendarTable {
+    width: 100%;
+    background: #fff;
+    box-shadow: none;
+    border: 1px solid #d3d2df;
+    overflow: hidden;
+    font-size: 0.95em;
+    margin: 1.5em 0;
+    border-collapse: collapse;
+
+    th {
+        text-align: left;
+        font-weight: bold;
+        background-color: white;
+        white-space: normal;
+        color: black;
+        padding: 0.6em;
+        border: 1px solid #d3d2df;
+        width: 50%;
+    }
+
+    tr:nth-child(even) {
+        background-color: #fafbfe;
+        color: black;
+    }
+
+    td {
+        white-space: normal;
+    color: black;
+    padding: 0.6em;
+    border: 1px solid #d3d2df;
+    width: 50% !important;
+    }
+
+    td a {
+        color: #944fa0;
+    }
+}

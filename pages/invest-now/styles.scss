@@ -1,0 +1,14 @@
+.formContainer {
+    width: 60%;
+    margin: 0 auto;
+}
+.investNow {
+    a {
+        text-decoration: none !important;
+    }
+}
+@media only screen  and (max-width:550px){
+    .formContainer {
+        width: 95% !important;
+    }
+}

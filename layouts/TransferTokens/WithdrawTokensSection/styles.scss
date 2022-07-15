@@ -1,0 +1,14 @@
+@import '../../../static/styles/variables.scss';
+
+.formWrapper {
+  background: transparent;
+  margin-bottom: 2em;
+  max-width: 41em;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: $desktop) {
+  iframe {
+    width: 40em !important;
+  }
+}

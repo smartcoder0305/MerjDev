@@ -1,0 +1,213 @@
+.InvestmentTerms {
+  hr {
+    margin: 20px 0px;
+        border-top: 1px solid #e2e3ef;
+  }
+
+.downloadIcon {
+  fill: white;
+}
+.clock{
+  fill: white;
+}
+}
+
+.downloadsContainer {
+  background: #FAFBFF;
+    padding: 20px;
+    font-weight: bold;
+    width: 70%;
+    border: 1px solid #F0F1F5;
+    margin: 50px auto;
+    a{
+      text-decoration: none;
+    }
+    
+}
+
+@media only screen and(max-width: 500px){
+  .downloadsContainer{
+      padding: 9px;
+      width: 100%;
+      a{
+        text-decoration: none;
+      }
+  }
+  .downloadsItem{
+      font-size: 12px;
+      a{
+        text-decoration: none;
+      }
+  }
+}
+
+a[disabled="disabled"] {
+  pointer-events: none;
+}
+
+.linkDisabled{
+  opacity: .5 !important;
+}
+
+.smallText{
+  font-size: 11px;
+}
+
+.downloadsItem {
+  padding: 20px;
+  background: linear-gradient(to right,#FD734E, #794488);;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: white;
+  font-weight: bold;
+  a{
+    text-decoration: none;
+  }
+  
+      span {
+          float: right;
+      }
+
+  
+}
+
+.downloadsTitle {
+  font-size: 25px;
+  padding-bottom: 20px;
+  a{
+    text-decoration: none;
+  }
+}
+
+
+.gridContainer {
+bottom:10px;
+position: relative;
+    bottom: 81px;
+    width: 82%;
+    .row:nth-child(even) {
+        background-color: #fafbfe;
+    }
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 10px;
+
+    :first-child {
+        color: black;
+        font-weight: bold;
+        padding-left: 10px;
+
+    }
+
+    :last-child {
+        color: #969696;
+        padding-left: 10px;
+        position: relative;
+        right: 2px;
+    }
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    border: 1px solid #D5D5D5;
+    padding: 0.6em;
+
+  }
+
+.DealCheckmark1 {
+      margin-right: 10px;
+      padding-bottom: 10px;
+}
+
+.DealCheckmark2 {
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+
+.DealCheckmark3 {
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+.DealCheckmark4 {
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+.Section {
+    position: relative;
+    padding-bottom: 40px;
+    top: -40px;
+}
+
+.text1 {
+    position: relative;
+    left: 29px;
+    bottom: 25px;
+    width: 98%;
+}
+
+.text2 {
+    position: relative;
+    left: 29px;
+    bottom: 26px;
+}
+
+.text3 {
+    position: relative;
+    left: 29px;
+    bottom: 25px;
+}
+
+.text4 {
+    position: relative;
+    left: 29px;
+    bottom: 25px;
+}
+
+.DealCheckText1 { 
+  position: relative;
+  top: 13px;
+}
+
+.DealCheckText2 { 
+  position: relative;
+  bottom: 14px;
+}
+
+.DealCheckText3 { 
+  position: relative;
+  bottom: 42px;
+}
+
+.DealCheckText4 { 
+  position: relative;
+  bottom: 70px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .gridContainer{
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 425px) {
+  .text1{
+    width: 91%;
+  }
+
+  .downloadsItem{
+    font-size: 15px;
+  }
+}

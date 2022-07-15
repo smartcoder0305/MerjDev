@@ -1,0 +1,31 @@
+.container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 0.5s ease;
+    transition: opacity 0.5s ease; // for fade out
+    padding: 1.5em;
+}
+
+.fadeOut {
+    opacity: 0;
+}
+
+.closeIconContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.closeIcon {
+    padding: 16px;
+    background: none;
+    border: none;
+}

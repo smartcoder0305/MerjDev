@@ -1,0 +1,22 @@
+<svg width="12px" height="17px" viewBox="0 0 12 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M2,2 L2,50 L201,50 L201,2 L2,2 Z M2.29378531,0 L200.706215,0 C201.973037,-2.02906125e-16 203,0.8954305 203,2 L203,50 C203,51.1045695 201.973037,52 200.706215,52 L2.29378531,52 C1.02696266,52 1.5514103e-16,51.1045695 0,50 L0,2 C-1.5514103e-16,0.8954305 1.02696266,2.02906125e-16 2.29378531,0 Z" id="path-1"></path>
+    </defs>
+    <g id="NEWS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ARTICLE-EXAMPLE-1" transform="translate(-119.000000, -870.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="2845"></rect>
+            <g id="Group-2" transform="translate(101.000000, 852.000000)">
+                <g id="BG-COLOUR:">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#161723" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Colour-Palette-/-Accent-1" mask="url(#mask-2)" fill="#161723">
+                        <rect id="Rectangle" x="0" y="0" width="203" height="52"></rect>
+                    </g>
+                </g>
+                <path d="M30.1625659,21 L32,21 L32,32 L30.1625659,32 L30.1625659,21 Z M22.2750437,22.298 L23.5970999,21 L29.1990333,26.5 L23.5970999,32 L22.2750437,30.702 L25.6586114,27.402 L16,27.402 L16,25.598 L25.6586114,25.598 L22.2750437,22.298 Z" id="keyboard_tab---material" fill="#161723" transform="translate(24.000000, 26.500000) rotate(90.000000) translate(-24.000000, -26.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

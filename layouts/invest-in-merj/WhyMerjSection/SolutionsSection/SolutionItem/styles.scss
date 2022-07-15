@@ -1,0 +1,75 @@
+@import '../../../../../static/styles/variables.scss';
+.solutionItem {
+  padding: 1em 1em 1em 3.5em;
+  position: relative;
+  &::before {
+    content: '';
+    background: $border-colour;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0.5em;
+    left: 1.2em;
+  }
+  .number {
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 2.375em;
+    height: 2.375em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5em;
+    background: $white url('/static/images/pages/invest-in-merj/gradient-circle.svg') no-repeat
+      center center;
+    background-size: cover;
+  }
+  h3 {
+    margin: 0 0 0.5em 0;
+  }
+  &:last-child {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+
+//Desktop screen
+// @media only screen and (min-width: 768px) {
+//   .solutionItem {
+//     padding: 1em 1em 1em 4em;
+//     &::before {
+//       top: 0.5em;
+//       left: 1.38em;
+//     }
+//     .number {
+//       font-size: 1.2em;
+//     }
+//     h3 {
+//       margin: 0.2em 0 0.5em 0;
+//     }
+//   }
+// }
+
+@media only screen and (min-width: $desktop) {
+  .solutionItem {
+    padding: 1em 1em 1em 6em;
+    &::before {
+      top: 0.8em;
+      left: 1.8em;
+    }
+    .number {
+      font-size: 1.5em;
+    }
+    h3 {
+      font-size: 1.4em;
+      margin: 0.5em 0 0.5em 0;
+    }
+    p {
+      font-size: 1.05em;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@import '../../../../../../static/styles/variables.scss';
+.MobileMembersLogo {
+    width: 95%;
+    text-align: center;
+    display: none;
+    border: 1px solid #D3D2DF;
+    img {
+        width: 50%;
+    }
+}
+
+.container{
+  margin-bottom: 100px;
+}
+.tdTitle{
+  text-transform: uppercase;
+  width: 170px;
+  background-color: #e2e3ef;
+}
+table.membersTable {
+  border-spacing: 0.1;
+  border-collapse: collapse;
+  background: $white;
+  overflow: auto;
+  box-shadow: none;
+  font-size: 0.95em;
+  margin: 0px 0px 1.5em 0;
+    thead {
+      tr {
+        td {
+          font-weight: 700;
+        }
+      }
+    }
+    
+    tr {
+      background: $white;
+      border: 1px solid $border-colour;
+      td {
+        white-space: normal;
+        color: black;
+        padding: 0.6em;
+        border: 1px solid #D3D2DF;
+        a {
+          color: $secondary;
+        }
+        div{
+          max-width: 151px;
+        }
+      }
+    }
+  }
+
+@media only screen and (max-width: 750px) {
+    
+    .MembersLogo {
+        display: none;
+    }
+
+    .MobileMembersLogo {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .MobileMembersLogo {
+        width: 100%;
+    }
+}

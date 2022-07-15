@@ -1,0 +1,277 @@
+@import '../../../static/styles/variables.scss';
+.mobileNav {
+    background: $primary;
+    padding: 0.75em 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 100vw;
+    .mobileHeaderContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .mobileLogo {
+            img {
+                display: block;
+            }
+        }
+        .mobileNavToggle {
+            color: $white;
+            font-size: 1.4em;
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            border: none;
+            outline: none;
+            svg {
+                display: block;
+            }
+        }
+        div.mobileDropdownIcon{
+            display: block;
+            svg {
+                    display: inline !important;
+                }
+        }
+    }
+    .container {
+        position: relative;
+    }
+    .menuContainer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $white;
+    }
+    .mainNav,
+    .secondaryNav {
+        ul {
+            list-style: none;
+            margin: 1em 0 0 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background: $primary;
+            li,
+            li a {
+                color: $grey;
+                margin: 0;
+                padding: 0.65em 0;
+                display: block;
+                border: none;
+                text-decoration: none;
+                cursor: pointer;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                font-size: 0.8em;
+                background: transparent;
+                font-weight: 500;
+                font-family: 'gordita', sans-serif;
+                color: $grey;
+                &::before {
+                    display: none !important;
+                }
+                .btn {
+                    text-align: center;
+                    padding: 1em 1.5em;
+                    font-size: 1em;
+                    text-transform: uppercase;
+                    color: $white;
+                    font-weight: 700;
+                    background: $accent;
+                    width: 100%;
+                    letter-spacing: 0.1em;
+                    border-radius: 2px;
+                    border: none;
+                    text-decoration: none;
+                    cursor: pointer;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    margin: 0.2em 0;
+                    outline: none;
+                    &:hover,
+                    &:focus {
+                        background: lighten($accent, 3%);
+                    }
+                    &:active {
+                        background: darken($accent, 5%);
+                    }
+                }
+                a {
+                    font-size: 1em;
+                    padding: 0;
+                }
+                .navTierOne {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-left: 20px;
+                    width: 90%;
+                    .arrow {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+    }
+    .secondaryNav {
+        ul {
+            margin: 0;
+            padding: 0;
+            .backButton {
+                color: $grey;
+                opacity: 0.7;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 0 0 0.75em -0.3em;
+                .arrow {
+                    font-size: 1.3em;
+                    margin-right: 0.07em;
+                }
+            }
+        }
+    }
+}
+
+.navWrapper {
+    position: fixed;
+    top: 32px; // clear the header
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navFillButton {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+}
+
+.profileNavButton {
+    flex: 1;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+
+.slideInLeft {
+    animation: slide-in-left 0.33s ease;
+  }
+  
+  .slideOutLeft {
+    animation: slide-out-left 0.33s ease;
+  }
+
+  .slidefromleft {
+    animation: slide-from-left 0.33s ease;
+    // animation-delay: 0.1s;
+    visibility: visible;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;
+    /* FF 5+ */
+    -o-animation-fill-mode: forwards;
+    /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;
+    /* IE 10+ */
+    animation-fill-mode: forwards;
+    /* When the spec is finished */
+  }
+  
+  .slidefromright {
+    animation: slide-from-right 0.33s ease;
+    // animation-delay: 0.4s;
+    visibility: visible;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards;
+    /* FF 5+ */
+    -o-animation-fill-mode: forwards;
+    /* Not implemented yet */
+    -ms-animation-fill-mode: forwards;
+    /* IE 10+ */
+    animation-fill-mode: forwards;
+    /* When the spec is finished */
+  }
+  
+
+@media only screen and (min-width: $desktop) {
+    .mobileNav {
+        display: none;
+    }
+    main {
+        margin-top: 5.6em;
+    }
+}
+
+@media only screen and (max-width: $mobile){
+    .mobileNav{
+        .mainNav, 
+        .secondaryNav{
+            ul{
+                li, 
+                li a{ 
+                    .btn{
+                        width:90%;
+                        margin: 0.2em auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide-from-left {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  @keyframes slide-from-right {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slide-out-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }

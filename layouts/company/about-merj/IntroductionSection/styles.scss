@@ -1,0 +1,15 @@
+.columnsWrapper {
+  -webkit-columns: 2 200px;
+  -moz-columns: 2 200px;
+  columns: 2 200px;
+
+  -webkit-column-gap: 4em;
+  -moz-column-gap: 4em;
+  column-gap: 4em;
+}
+
+@media only screen and(max-width: 500px){
+  .introductionSection{
+    margin: 30px auto 0px auto !important;
+  }
+}

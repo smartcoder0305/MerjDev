@@ -1,0 +1,304 @@
+@import '../../../static/styles/variables.scss';
+
+.innerPadding {
+    max-width: 80em;
+    margin: 0 auto;
+    padding: 2em 1em;
+    overflow: auto;
+}
+section.jumboTron {
+  background-image: url('../../../static/images/bg.jpg');
+  background-size: cover;
+  background-position: left center;
+  background-color: $primary;
+  color: $white;
+  margin-bottom: 3em;
+
+  h1 {
+    small {
+      margin: 0em 4em 0em 0;
+    }
+    margin: 0em !important;
+
+  }
+
+  .splitBlockContainer {
+    text-align: center;
+    height: 200px;
+    background-color: #161723;
+  }
+  .buttonsContainer {
+    font-size: 1.2em !important;
+  }
+  .splitBlock {
+    padding: 50px 0px;
+    background-color: #161723;
+    text-align: center;
+    width: 50%;
+    display: inline-block;
+    h4 {
+      font-size: 0.7em;
+    }
+    .centerText {
+      width: 50%;
+      margin: 5px auto;
+      
+    }
+
+    div {
+      font-size: 0.8em;
+     
+      strong {
+        font-size:1.2em !important;
+      }
+    }
+  }
+
+
+  .jumboHeader {
+    // margin: 1em 0;
+    .textContainer {
+      display: flex;
+      flex-wrap: wrap;
+      // margin-bottom: 2em;
+    }
+    .smallTextContainer {
+      margin-top: 1em;
+    }
+    h1 {
+      font-size: 1.85em;
+      line-height: 1.2;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin: 0.5em 0;
+      small {
+        display: block;
+        color: $grey;
+        font-weight: 500;
+        font-size: 0.28em;
+        letter-spacing: 0.1em;
+        line-height: 1.5;
+        margin: 0.5em 4em 1.5em 0;
+      }
+    }
+    .text {
+      color: $white;
+      width: 80%;
+    }
+    .jumboTronVideoMobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 2em 0 1em 0;
+      .left {
+        flex: 1;
+        margin-right: 1em;
+      }
+      .right {
+        flex: 3;
+        .videoDescriptor {
+          font-size: 0.8em;
+          line-height: 1.4;
+          font-weight: 500;
+          span {
+            color: $secondary;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-right: 0.3em;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .buttonsContainer {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .jumboTronCTA {
+      button {
+        margin: 0.5em 0;
+      }
+    }
+  }
+  .jumboFooter {
+    float: right;
+    margin-top: -2em;
+
+    .associatedlogosWrapper {
+      max-width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop) {
+.innerPadding {
+    padding: 0em 2em;
+}
+
+
+}
+
+@media only screen and (max-width: 750px) {
+  section.jumboTron {
+    .splitBlockContainer {
+      height: auto;
+    }
+  .splitBlock {
+    padding: 50px 0px;
+    height: auto;
+    background-color: #161723;
+    border: none;
+    text-align: center;
+    width: 100%;
+  }
+
+
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  section.jumboTron {
+    padding: 2em 0 0 0;
+
+
+    
+    .jumboHeader {
+      .textContainer {
+        flex-wrap: nowrap;
+        .spacer {
+          min-width: 1em;
+        }
+      }
+      .text {
+        color: $grey;
+      }
+      .jumboTronVideoMobile {
+        max-width: 29em;
+        .left {
+          flex: 1;
+        }
+        .right {
+          flex: 2.5;
+          .videoDescriptor {
+            font-size: 1.05em;
+          }
+        }
+      }
+      .jumboTronCTA {
+        button {
+          display: inline-block;
+          width: auto;
+          margin: 0.5em 1em 0.5em 0;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  section.jumboTron {
+    .jumboHeader {
+      h1 {
+        font-size: 3.8em;
+        line-height: 1.1;
+        small {
+          font-size: 0.25em;
+          margin-bottom: 2em;
+        }
+      }
+      p {
+        display: block;
+        font-size: 1.3em;
+      }
+    }
+    .jumboFooter {
+      .associatedlogosWrapper {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  section.jumboTron {
+    margin-bottom: 2em;
+    padding: 3em 0 0 0;
+    .jumboHeader {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .jumboHeaderRight {
+        .jumboTronVideoMobile {
+          max-width: auto;
+          flex-direction: column;
+          margin: 0 1em;
+          .left {
+            flex: 1;
+            margin-bottom: 1em;
+            img {
+              max-width: 13em;
+            }
+          }
+          .right {
+            flex: 1;
+            .videoDescriptor {
+              font-size: 1.05em;
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section.jumboTron {
+    margin-bottom: 3em;
+    .jumboHeader {
+      h1 {
+        font-size: 4.7em;
+        small {
+          font-size: 0.18em;
+        }
+      }
+      .jumboHeaderLeft {
+        flex: 1;
+      }
+      .jumboHeaderRight {
+        flex: 0.45;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px){
+  section.jumboTron{
+    margin-bottom:30px;
+  }
+  .jumboFooter {
+    margin-top: 1em !important;
+    float: none !important;
+  }
+}
+@media only screen and (max-height: 768px) and (min-width: 1200px) {
+  section.jumboTron {
+    padding: 1.8em 0 0 0;
+    // margin-bottom: 0;
+    .jumboHeader {
+      h1 {
+        font-size: 4em;
+      }
+      .jumboHeaderRight {
+        .jumboTronVideoMobile {
+          .left {
+            img {
+              max-width: 10em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,212 @@
+
+.tabContainer {
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 150px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .tabContainerMobile {
+    display: none;
+  }
+  
+  .tabBackground {
+    background-image: url('./bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 48px;
+  }
+  
+
+  .tabBtn {
+    padding: 10px 60px;
+    background-color: white;
+    border-radius: 2px 2px 0px 0px;
+    font-weight: bold;
+    margin: 0px 1px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+ .tabBtnActive {
+    margin: 0px 1px;
+    padding: 10px 60px;
+    background-color: #fd9551;
+    border-radius: 2px 2px 0px 0px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .tabBtn:hover {
+     cursor: pointer;
+ }
+
+ .menuBtnMobile {
+   display: none;
+   border: 1px solid rgb(21, 173, 147);
+   color: rgb(21, 173, 147);
+   background-color: transparent;
+   text-align: center;
+   width: 100px;
+   border-radius: 8px;
+   font-weight: bold;
+   padding: 10px 0px;
+   font-size: 14px;
+   
+ }
+ .menuIcon {
+   fill: rgb(21, 173, 147);
+ }
+ .menuIconWhite {
+  fill: white;
+}
+
+.menuItemMobileIcon {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+}
+ .icon {
+   padding-top: 2px;
+ }
+ .menuTitleMobile {
+   display: none;
+
+ }
+ .iconSmall {
+  display: inherit;
+  width: 13px;
+  position: relative;
+  height: 13px;
+  // top: 2px;
+  // left: 10px;
+  margin-left: 10px;
+}
+
+ .menuBtnIcon {
+   display: inline;
+ }
+
+ .menuItemsMobile {
+   width: 100%;
+
+ }
+
+ .menuItemsMobile a div {
+  background-color: rgb(21, 173, 147);
+  padding: 20px 10px;
+  border-bottom: 1px solid white;
+  color: white;
+  font-weight: bold;
+ }
+//  .menuItemsMobile:last-child a div {
+//   background-color: rgb(21, 173, 147);
+//   padding: 10px 0px;
+//   border-bottom: 0px;
+//  }
+
+
+.navWrapper {
+  position: fixed;
+  top: 147px; // clear the header
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.navFillButton {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+}
+
+ @media only screen and (max-width: 767px) {
+   .tabBtn {
+    display: inline;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+   }
+
+   .tabBtnActive {
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+    display: inline;
+  }
+
+   .tabBackground{
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 1;
+    padding: 0px 20px;
+   } 
+  
+  .tabContainer {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 100px 0px 10px 0px;
+    justify-content: left;
+  }
+
+  .menuBtnMobile { 
+    display: inline-block;
+    float: right;
+  }
+
+  .tabContainerMobile {
+    display: block;
+    padding: 50px 0px; 
+  }
+  .tabContainer {
+    display: none;
+  }
+
+  .menuTitleMobile {
+    display: inline;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;    
+  }
+  .overlay {
+    background-color: black;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+ }
+
+ @media only screen and (max-width: 767px) {
+ 
+  .menuTitleMobile {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 375px) {
+ 
+  .menuTitleMobile {
+    font-size: 15px;
+  }
+
+  .menuBtnMobile { 
+    padding: 5px 0px;
+  }
+
+}
+

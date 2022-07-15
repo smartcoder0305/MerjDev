@@ -1,0 +1,45 @@
+.container {
+}
+
+.videosContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.videoContainer {
+  width: 100%;
+  display: flex;
+}
+
+@media only screen and (min-width: 600px) {
+  .videosContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .videoContainer {
+    width: auto;
+    flex-basis: 46%;
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (min-width: 996px) {
+  .container {
+  }
+  .videosContainer {
+  }
+  .videoContainer {
+    flex-basis: 31%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+  }
+  .videosContainer {
+  }
+  .videoContainer {
+  }
+}

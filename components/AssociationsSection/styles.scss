@@ -1,0 +1,46 @@
+@import '../../static/styles/variables.scss';
+
+.associatedlogosWrapper {
+  text-align: center;
+  color: $white;
+  margin: 0em 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.6em;
+  letter-spacing: 0.08em;
+  .associationLogos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.5em 0;
+    align-items: center;
+    a {
+      img {
+        margin: 0.4em 0 !important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .associatedlogosWrapper {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  margin: 1em 0;
+
+    .associationLogos {
+      flex-direction: row;
+      justify-content: left;
+      a {
+        display: block;
+        margin-left: 2em;
+        img {
+          width: 11em !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../../../../static/styles/variables.scss';
+.exchangeTablesWrapper {
+    background: $primary;
+    padding-bottom: 2em;
+    h4 {
+        color: $grey;
+        margin-top: 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .exchangeTablesWrapper {
+        h4 {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+        .floatingTablesWrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            table.floatingTablesWrapper {
+                flex-basis: 48%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 996px) {
+    .exchangeTablesWrapper {
+        padding-bottom: 3em;
+    }
+}
